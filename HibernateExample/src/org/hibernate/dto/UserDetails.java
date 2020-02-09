@@ -42,7 +42,7 @@ public class UserDetails {
 	private String address;
 	@Lob
 	private String description;
-	public int getUserId() {
+	public int getUserId() {  
 		return userId;
 	}
 	public void setUserId(int userId) {
