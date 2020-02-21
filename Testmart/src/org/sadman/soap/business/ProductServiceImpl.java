@@ -3,6 +3,8 @@ package org.sadman.soap.business;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.sadman.soap.model.Product;
+
 public class ProductServiceImpl {
 	List<String> bookList = new ArrayList<>();
 	List<String> musicList = new ArrayList<>();
@@ -57,5 +59,12 @@ public class ProductServiceImpl {
 			return false;
 		}
 		return true;
+	}
+
+	public List<Product> getProductsv2(String category) {
+		List<Product> productList = new ArrayList<>();
+		productList.add(new Product("Java Book", "1234", 100.75));
+		productList.add(new Product("C# Book", "123", 1000.75));
+		return productList;
 	}
 }
