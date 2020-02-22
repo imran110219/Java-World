@@ -1,12 +1,19 @@
 package Creational.Factory;
 
+import Creational.AbstractFactory.Location;
+
 /**
  * Created by Imran on 2/22/2020.
  */
 public class LuxuryCar extends Car {
 
-    LuxuryCar() {
+    public LuxuryCar() {
         super(CarType.LUXURY);
+        construct();
+    }
+
+    public LuxuryCar(Location location) {
+        super(CarType.LUXURY, location);
         construct();
     }
 

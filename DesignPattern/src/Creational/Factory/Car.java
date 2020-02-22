@@ -1,13 +1,17 @@
 package Creational.Factory;
 
+import Creational.AbstractFactory.Location;
+
 /**
  * Created by Imran on 2/22/2020.
  */
 public abstract class Car {
 
     public Car(CarType model) {
-        this.model = model;
-        arrangeParts();
+
+    }
+
+    public Car(CarType luxury, Location location) {
     }
 
     private void arrangeParts() {

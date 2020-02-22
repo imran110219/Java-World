@@ -1,12 +1,19 @@
 package Creational.Factory;
 
+import Creational.AbstractFactory.Location;
+
 /**
  * Created by Imran on 2/22/2020.
  */
 public class SmallCar extends Car {
 
-    SmallCar() {
+    public SmallCar() {
         super(CarType.SMALL);
+        construct();
+    }
+
+    public SmallCar(Location location) {
+        super(CarType.SMALL, location);
         construct();
     }
 
