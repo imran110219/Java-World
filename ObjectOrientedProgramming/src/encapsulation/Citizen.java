@@ -29,14 +29,15 @@ public class Citizen {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if(age>=18)
+            this.age = age;
     }
 
     public static void main(String[] args){
         Citizen citizen = new Citizen();
         citizen.setName("Sadman");
         citizen.setAddress("Dhaka");
-        citizen.setAge(20);
+        citizen.setAge(17);
         System.out.println(citizen.getName() + " is " + citizen.getAge() + " years old and lives in " + citizen.getAddress());
     }
 }

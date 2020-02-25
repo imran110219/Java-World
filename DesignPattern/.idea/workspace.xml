@@ -16,8 +16,23 @@
       <file leaf-file-name="PrototypeCapable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creational/Prototype/PrototypeCapable.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsiaCarFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Creational/AbstractFactory/AsiaCarFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+=======
             <state relative-caret-position="102">
               <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
               <folding />
             </state>
           </provider>
@@ -43,8 +58,18 @@
       <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creational/Prototype/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="272">
               <caret line="20" column="36" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="36" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="255">
+              <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+=======
+            <state relative-caret-position="333">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="36" />
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
+>>>>>>> a1c8bba2e2d422fe16f581f13dd3036b810a5cee
               <folding>
                 <element signature="e#177#178#0" expanded="true" />
                 <element signature="e#204#205#0" expanded="true" />
@@ -60,7 +85,16 @@
       <file leaf-file-name="Show.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creational/Prototype/Show.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="272">
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="170">
+              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding />
+=======
+            <state relative-caret-position="340">
+>>>>>>> a1c8bba2e2d422fe16f581f13dd3036b810a5cee
               <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="e#175#176#0" expanded="true" />
@@ -70,6 +104,7 @@
                 <element signature="e#509#510#0" expanded="true" />
                 <element signature="e#538#539#0" expanded="true" />
               </folding>
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
             </state>
           </provider>
         </entry>
@@ -89,11 +124,17 @@
       <file leaf-file-name="TestPrototypePattern.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creational/Prototype/TestPrototypePattern.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="238">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding />
+=======
             <state relative-caret-position="323">
               <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
             </state>
           </provider>
         </entry>
@@ -222,6 +263,15 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+=======
+      <pane id="Scope" />
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
+>>>>>>> a1c8bba2e2d422fe16f581f13dd3036b810a5cee
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,8 +340,15 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+<<<<<<< HEAD
+      <pane id="Scope" />
+=======
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
+>>>>>>> a1c8bba2e2d422fe16f581f13dd3036b810a5cee
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -785,15 +842,31 @@
       <workItem from="1582223077884" duration="537000" />
       <workItem from="1582308166548" duration="786000" />
       <workItem from="1582361719081" duration="3540000" />
+<<<<<<< HEAD
+      <workItem from="1582378753487" duration="2172000" />
+      <workItem from="1582435534462" duration="706000" />
+=======
       <workItem from="1582378753487" duration="2368000" />
       <workItem from="1582476849574" duration="590000" />
       <workItem from="1582556916539" duration="4255000" />
+<<<<<<< HEAD
       <workItem from="1582640191554" duration="2908000" />
+=======
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
+>>>>>>> a1c8bba2e2d422fe16f581f13dd3036b810a5cee
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="15131000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="7888000" />
+=======
+    <option name="totallyTimeSpent" value="12223000" />
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
+>>>>>>> a1c8bba2e2d422fe16f581f13dd3036b810a5cee
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="0" />
@@ -802,6 +875,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
+>>>>>>> a1c8bba2e2d422fe16f581f13dd3036b810a5cee
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -810,6 +891,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -845,6 +927,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/Creational/AbstractFactory/TestFactoryPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Creational/AbstractFactory/AsiaCarFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
+    <entry file="file://$PROJECT_DIR$/src/Creational/AbstractFactory/DefaultCarFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> a1c8bba2e2d422fe16f581f13dd3036b810a5cee
     <entry file="file://$PROJECT_DIR$/src/Creational/Factory/CarFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -868,8 +980,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Creational/AbstractFactory/CarFactory.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="306">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+=======
         <state relative-caret-position="425">
           <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="imports" expanded="false" />
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
+          </folding>
+>>>>>>> a1c8bba2e2d422fe16f581f13dd3036b810a5cee
         </state>
       </provider>
     </entry>
@@ -1113,6 +1238,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Creational/AbstractFactory/CarFactory.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="255">
+          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+=======
         <state relative-caret-position="333">
           <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
         </state>
@@ -1185,6 +1314,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+>>>>>>> 0210afc2fd4cd46dc6f6c78d0becd301c6164ed5
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
