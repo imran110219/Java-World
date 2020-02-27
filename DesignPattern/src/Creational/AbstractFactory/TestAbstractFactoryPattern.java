@@ -5,7 +5,7 @@ import Creational.Factory.CarType;
 /**
  * Created by Imran on 2/22/2020.
  */
-public class TestFactoryPattern {
+public class TestAbstractFactoryPattern {
     public static void main(String[] args)
     {
         System.out.println(CarFactory.buildCar(CarType.SMALL));
