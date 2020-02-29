@@ -7,8 +7,10 @@ public class TestInheritance {
     public static void main(String[] args){
         Parent parent = new Parent(50, 80);
         System.out.println(parent.toString());
+        parent.eating();
 
         Child child = new Child(10,20,30);
         System.out.println(child.toString());
+        child.eating();
     }
 }

@@ -27,3 +27,20 @@ public void setAge(int age) {
 		this.age = age;
 }
 ```
+### ইনহেরিট্যান্স (Inheritance)
+Inheritance এর অর্থ হল উত্তরাধিকার। সহজ কথায় আপনার বাবার সম্পত্তি যেমন উত্তরাধিকার সুত্রে আপনি পান, ঠিক একই ভাবে জাভা তে কোন class যদি অন্য একটা class কে extend করে তাহলে তাদের ভেতরে child-parent সম্পর্ক হয়ে যায়। ধরুন, Parent নামে
+আমার একটা ক্লাস আছে তার ভেতরে কিছু variable এবং method আছে। তারপর একটা ক্লাস তৈরী করলাম Child নামে এবং Parent কে extend করলাম। তাহলে Parent এর সব variable এবং method গুলো Child পাবে। 
+
+```Inheritance
+public class Parent {
+    private int age;
+
+    public void eating() {
+        System.out.println(getClass().getSimpleName() + " is eating.");
+    }
+}
+
+public class Child extends Parent {
+
+}
+```
