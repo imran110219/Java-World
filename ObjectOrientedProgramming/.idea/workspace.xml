@@ -43,9 +43,34 @@
       <file leaf-file-name="TestInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/abstraction/interfaces/TestInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="204">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#150#151#0" expanded="false" />
+                <element signature="e#215#216#0" expanded="false" />
+                <element signature="e#264#265#0" expanded="false" />
+                <element signature="e#307#308#0" expanded="false" />
+                <element signature="e#352#353#0" expanded="false" />
+                <element signature="e#398#399#0" expanded="false" />
+                <element signature="e#447#448#0" expanded="false" />
+                <element signature="e#474#475#0" expanded="false" />
+                <element signature="e#524#525#0" expanded="false" />
+                <element signature="e#552#553#0" expanded="false" />
+                <element signature="e#602#603#0" expanded="false" />
+                <element signature="e#630#631#0" expanded="false" />
+                <element signature="e#679#680#0" expanded="false" />
+                <element signature="e#706#707#0" expanded="false" />
+                <element signature="e#960#961#0" expanded="false" />
+                <element signature="e#988#989#0" expanded="false" />
+                <element signature="e#1038#1039#0" expanded="false" />
+                <element signature="e#1066#1067#0" expanded="false" />
+                <element signature="e#1116#1117#0" expanded="false" />
+                <element signature="e#1144#1145#0" expanded="false" />
+                <element signature="e#1193#1194#0" expanded="false" />
+                <element signature="e#1221#1222#0" expanded="false" />
+                <element signature="e#1275#1276#0" expanded="false" />
+                <element signature="e#1338#1339#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,20 +78,9 @@
       <file leaf-file-name="Citizen.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/encapsulation/Citizen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-              <folding>
-                <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="214">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,8 +203,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -731,14 +745,15 @@
       <workItem from="1582377842292" duration="1197000" />
       <workItem from="1582433300377" duration="611000" />
       <workItem from="1582623344513" duration="772000" />
+      <workItem from="1583046956576" duration="641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16625000" />
+    <option name="totallyTimeSpent" value="17266000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -759,7 +774,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -822,7 +837,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#150#151#0" expanded="false" />
+            <element signature="e#215#216#0" expanded="false" />
+            <element signature="e#264#265#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
+            <element signature="e#398#399#0" expanded="false" />
+            <element signature="e#447#448#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+            <element signature="e#552#553#0" expanded="false" />
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#960#961#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1038#1039#0" expanded="false" />
+            <element signature="e#1066#1067#0" expanded="false" />
+            <element signature="e#1116#1117#0" expanded="false" />
+            <element signature="e#1144#1145#0" expanded="false" />
+            <element signature="e#1193#1194#0" expanded="false" />
+            <element signature="e#1221#1222#0" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -859,7 +899,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#150#151#0" expanded="false" />
+            <element signature="e#215#216#0" expanded="false" />
+            <element signature="e#264#265#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
+            <element signature="e#398#399#0" expanded="false" />
+            <element signature="e#447#448#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+            <element signature="e#552#553#0" expanded="false" />
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#960#961#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1038#1039#0" expanded="false" />
+            <element signature="e#1066#1067#0" expanded="false" />
+            <element signature="e#1116#1117#0" expanded="false" />
+            <element signature="e#1144#1145#0" expanded="false" />
+            <element signature="e#1193#1194#0" expanded="false" />
+            <element signature="e#1221#1222#0" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -896,7 +961,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#150#151#0" expanded="false" />
+            <element signature="e#215#216#0" expanded="false" />
+            <element signature="e#264#265#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
+            <element signature="e#398#399#0" expanded="false" />
+            <element signature="e#447#448#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+            <element signature="e#552#553#0" expanded="false" />
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#960#961#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1038#1039#0" expanded="false" />
+            <element signature="e#1066#1067#0" expanded="false" />
+            <element signature="e#1116#1117#0" expanded="false" />
+            <element signature="e#1144#1145#0" expanded="false" />
+            <element signature="e#1193#1194#0" expanded="false" />
+            <element signature="e#1221#1222#0" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,28 +1219,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/abstraction/interfaces/TestInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="204">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#150#151#0" expanded="false" />
+            <element signature="e#215#216#0" expanded="false" />
+            <element signature="e#264#265#0" expanded="false" />
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
+            <element signature="e#398#399#0" expanded="false" />
+            <element signature="e#447#448#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+            <element signature="e#552#553#0" expanded="false" />
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#960#961#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1038#1039#0" expanded="false" />
+            <element signature="e#1066#1067#0" expanded="false" />
+            <element signature="e#1116#1117#0" expanded="false" />
+            <element signature="e#1144#1145#0" expanded="false" />
+            <element signature="e#1193#1194#0" expanded="false" />
+            <element signature="e#1221#1222#0" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/encapsulation/Citizen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="214">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
