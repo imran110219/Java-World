@@ -48,5 +48,11 @@ public class Child extends Parent {
 
 ### পলিমরফিজম (Polymorphism)
 Polymorphism অর্থ হল বহুরূপতা। সহজভাবে বলতে গেলে একটা জিনিসের বহুমুখী ব্যবহার থাকে সেটাই হল পলিমরফিজম। উদাহরনস্বরূপ - মোবাইল আমরা কথা বলা, ইন্টারনেট ব্যবহার, সময় দেখা বিভিন্ন কাজে ব্যবহার করি। পলিমরফিজম সাধারণত দুই প্রকারঃ
-* Compile time Polymorphism
-* Runtime Polymorphism
+* Compile time Polymorphism / Overloading
+* Runtime Polymorphism / Overriding
+
+	#### Compile time Polymorphism / Overloading : এটা বলতে বোঝায় যে পলিমরফিজম প্রোগ্রাম কম্পাইল হওয়ার সময় গঠিত হয় সেটাকেই আমরা compile time polymorphism বলি। Overloading হল তেমন একটা বিষয়। যখন একই নামে একাধিক মেথড একই ক্লাসে অবস্থান করে কিন্তু তাদের
+		  প্যারামিটার টাইপ অথবা সংখ্যা ভিন্ন হয় তখন সেটা হয় method overloading.
+		  
+	#### Runtime time Polymorphism / Overriding : এটা বলতে বোঝায় যে পলিমরফিজম প্রোগ্রাম রান হওয়ার সময় গঠিত হয় সেটাকেই আমরা runtime polymorphism বলি। Overriding হল তেমন একটা বিষয়। যখন একই নামে একাধিক মেথড একই ক্লাসে অবস্থান করে কিন্তু তাদের
+		  প্যারামিটার টাইপ অথবা সংখ্যা ভিন্ন হয় তখন সেটা হয় method overloading.
