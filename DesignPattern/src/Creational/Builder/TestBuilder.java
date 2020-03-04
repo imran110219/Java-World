@@ -3,7 +3,7 @@ package Creational.Builder;
 /**
  * Created by Sadman on 2/27/2020.
  */
-public class TestBuilderPattern {
+public class TestBuilder {
     public static void main(String[] args) {
         User user1 = new User.UserBuilder("Lokesh", "Gupta")
                 .age(30)
