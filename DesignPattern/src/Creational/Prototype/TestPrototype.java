@@ -6,7 +6,7 @@ import Creational.Prototype.PrototypeFactory.ModelType;
 /**
  * Created by Imran on 2/24/2020.
  */
-public class TestPrototypePattern {
+public class TestPrototype {
     public static void main(String[] args)
     {
         try

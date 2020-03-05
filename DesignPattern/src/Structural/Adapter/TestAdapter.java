@@ -3,7 +3,7 @@ package Structural.Adapter;
 /**
  * Created by Sadman on 3/2/2020.
  */
-public class TestAdapterPattern {
+public class TestAdapter {
     public static void main(String[] args) {
 
         testClassAdapter();
