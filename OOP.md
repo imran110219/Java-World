@@ -54,21 +54,21 @@ Polymorphism অর্থ হল বহুরূপতা। সহজভাব�
 	#### Compile time Polymorphism / Overloading
 	এটা বলতে বোঝায় যে পলিমরফিজম প্রোগ্রাম কম্পাইল হওয়ার সময় গঠিত হয় সেটাকেই আমরা compile time polymorphism বলি। Overloading হল তেমন একটা বিষয়। যখন একই নামে একাধিক মেথড একই ক্লাসে অবস্থান করে কিন্তু তাদের প্যারামিটার টাইপ অথবা সংখ্যা ভিন্ন হয় তখন সেটা হয় method overloading. ধরুন, আমার কাছে একটা ছুরি আছে সেই ছুরি আমি সবজি, কাগজ অথবা কাপড় কাটার কাজে ব্যবহার করতে পারি। যখন্ একই নামের method বিভিন্ন কাজ করে সেটাই হল Overloading.
 		  
-		 ```Overloading
-		 public void cutting(String things){
-			System.out.println("Knife cuts " + things);
-		 }
+```Overloading
+public void cutting(String things){
+	System.out.println("Knife cuts " + things);
+}
 
-		 // Method Overloading By changing the data type
-		 public void cutting(int cuttingLength){
-			System.out.println("Knife cuts " + cuttingLength + " centimeter");
-		 }
-		 // Method Overloading By changing number of arguments
-		 public void cutting(String things, int cuttingLength){
-			System.out.println("Knife cuts " + things + " with " + cuttingLength + " centimeter");
-		 }
+// Method Overloading By changing the data type
+public void cutting(int cuttingLength){
+	System.out.println("Knife cuts " + cuttingLength + " centimeter");
+}
+// Method Overloading By changing number of arguments
+public void cutting(String things, int cuttingLength){
+	System.out.println("Knife cuts " + things + " with " + cuttingLength + " centimeter");
+}
 
-		 ```
+```
 		  
 	#### Runtime Polymorphism / Overriding
 	এটা বলতে বোঝায় যে পলিমরফিজম প্রোগ্রাম রান হওয়ার সময় গঠিত হয় সেটাকেই আমরা runtime polymorphism বলি। Overriding হল তেমন একটা বিষয়। যখন একই মেথড Parent ক্লাসে অবস্থান করে আবার Child ক্লাসে অবস্থান করে তখন সেটা হয় method overloading. উদাহরনসবরুপঃ আমি উত্তরাধিকারসুত্রে বাবার কাছ থেকে একটা পুরানো গাড়ি পেলাম এখন বাবার গাড়িটা পুরানো বলে আমি চালাতে সমস্যা হচ্ছে। এই অবস্থায় আমার উচিত হল গাড়িটিকে একটু আপডেট করা যেমন ইঞ্জিন পরিবর্তন, রং করা ইত্যাদি। এইটাই হল Overriding.
