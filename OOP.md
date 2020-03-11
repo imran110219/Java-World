@@ -97,3 +97,41 @@ Abstract ক্লাস/মেথড abstract keyword ব্যবহার ক
 অ্যাবস্ট্রাকশান দুই ভাবে হয়ে থাকেঃ
 * Abstract class
 * Interface 
+
+	#### Abstract class
+	Abstract class অথবা method তৈরী করতে গেলে abstract keyword ব্যবহার করে করা যায়। Abstract class এর ভেতরে method abstract অথবা non abstract ও হতে পারে। Abstract ক্লাসের object তৈরী করা যায় না। অন্য ক্লাস Abstract ক্লাসকে extend করে  তার সুবিধা মত method implement করে নেয়। Child class কে অবশ্যই  abstract method কে implement করতে হবে না হলে error দিবে।
+	
+	```Abstract
+	abstract class Shape {
+		abstract double area();
+    
+		public String getColor() {
+			return color;
+		}
+	}
+	 
+	class Circle extends Shape {
+
+		@Override
+		double area() {
+			return Math.PI * Math.pow(radius, 2);
+		}
+	}
+	```
+	
+	#### Interface
+	Interface হল পুরোপুরি abstract করার একটা উপায়। একটা Interface এ শুধু abstract method এ থাকতে পারে। অন্য কোন ক্লাস Interface কে implement করে । 
+	
+	```Interface
+	public interface Animal {
+		public void getName();
+	}
+	 
+	class Human implements Animal{
+
+		@Override
+		public void getName() {
+			System.out.println("Human");
+		}
+	}
+	```
