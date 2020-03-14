@@ -20,11 +20,11 @@ Thread মুলত দুইভাবে তৈরী করা যায়ঃ
 
 ### Java Thread built in methods
 জাভাতে কিছু নিজস্ব method আছে যে গুলো Thread এর implementation এর জন্য ব্যবহার করা যায়ঃ
-*getName	Obtain thread’s name
-*getPriority	Obtain thread’s priority
-*isAlive	Determine if a thread is still running
-*join	Wait for a thread to terminate
-*run	Entry point for the thread
-*sleep	Suspend a thread for a period of time
-*start	
-*Start a thread by calling its run method
+
+* **getName** Thread এর নাম return করে
+* **getPriority** Thread এর priority return করে
+* **isAlive** Thread চলমান আছে কিনা যাচাই করে
+* **join** Thread এর শেষ হওইয়া পর্যন্ত অপেক্ষা করে
+* **run** Thread শুরু হওয়ার মেথড
+* **sleep**	Thread একটি নির্দিষ্ট সময় পর্যন্ত বন্ধ থাকে
+* **start**	Thread শুরু হয় এই মেথড কল করলে
