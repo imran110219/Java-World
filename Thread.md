@@ -12,12 +12,6 @@
 4. **Non-Runnable (Blocked)** : যখন Thread কে চলমান অবস্থায় থামিয়ে দেওয়া হয়।
 5. **Terminated** : এইটা হল যখন ফাইনালি Thread কে বন্ধ করে দেওয়া হয়।
 
-
-### Java Thread তৈরির উপায়
-Thread মুলত দুইভাবে তৈরী করা যায়ঃ
-1. Runnable Interface কে  implement করে
-2. Thread class কে extend করে 
-
 ### Java Thread built in methods
 জাভাতে কিছু নিজস্ব method আছে যে গুলো Thread এর implementation এর জন্য ব্যবহার করা যায়ঃ
 
@@ -28,3 +22,58 @@ Thread মুলত দুইভাবে তৈরী করা যায়ঃ
 * **run** Thread শুরু হওয়ার মেথড
 * **sleep**	Thread একটি নির্দিষ্ট সময় পর্যন্ত বন্ধ থাকে
 * **start**	Thread শুরু হয় এই মেথড কল করলে
+
+### Java Thread তৈরির উপায়
+Thread মুলত দুইভাবে তৈরী করা যায়ঃ
+1. Runnable Interface কে  implement করে
+2. Thread class কে extend করে 
+
+	### Runnable Interface
+	1. প্রথমে একটা ক্লাস বানাতে হবে যেটা Runnable Interface এর run() মেথড কে implement করবে। 
+	
+	```Runnable Interface
+	class RunnableImpl implements Runnable { 
+  
+        public void run() 
+        { 
+            System.out.println("run"); 
+        } 
+    } 
+	```
+
+	2. এরপর Thread এর একটা object তৈরী করতে হবে এবং RunnableImpl class কে constructor এ pass করতে হবে।
+	
+	```Runnable Interface Thread Object
+	Thread thread = new Thread(new RunnableImpl());
+	```
+	
+	3. তারপর আমাদেরকে thread object টা চালাতে হবে start() মেথড কল করে।
+	
+	```Start Thread
+	thread.start(); 
+	```
+	
+	### Thread Class
+	1. প্রথমে একটা ক্লাস বানাতে হবে যেটা Thread class কে extend করবে। 
+	
+	```Thread Class
+	class ThreadImpl extends Thread { 
+  
+        public void run() 
+        { 
+            System.out.println("run"); 
+        } 
+    } 
+	```
+	
+	2. এরপর Thread এর একটা object তৈরী করতে হবে।
+	
+	```Thread Object
+	ThreadImpl thread = new ThreadImpl();
+	```
+	
+	3. তারপর আমাদেরকে thread object টা চালাতে হবে start() মেথড কল করে।
+	
+	```Start Thread
+	thread.start(); 
+	```
