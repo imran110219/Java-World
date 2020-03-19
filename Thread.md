@@ -25,8 +25,8 @@
 
 ### Java Thread তৈরির উপায়
 Thread মুলত দুইভাবে তৈরী করা যায়ঃ
-1. Runnable Interface কে  implement করে
-2. Thread class কে extend করে 
+* Runnable Interface কে  implement করে
+* Thread class কে extend করে 
 
 	### Runnable Interface
 	1. প্রথমে একটা ক্লাস বানাতে হবে যেটা Runnable Interface এর run() মেথড কে implement করবে। 
