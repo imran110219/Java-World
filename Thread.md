@@ -28,52 +28,54 @@ Thread মুলত দুইভাবে তৈরী করা যায়ঃ
 * Runnable Interface কে  implement করে
 * Thread class কে extend করে 
 
-	### Runnable Interface
-	1. প্রথমে একটা ক্লাস বানাতে হবে যেটা Runnable Interface এর run() মেথড কে implement করবে। 
-	
-	```Runnable Interface
-	class RunnableImpl implements Runnable { 
-  
-        public void run() 
-        { 
-            System.out.println("run"); 
-        } 
-    } 
-	```
+### Runnable Interface
+1. প্রথমে একটা ক্লাস বানাতে হবে যেটা Runnable Interface এর run() মেথড কে implement করবে। 
 
-	2. এরপর Thread এর একটা object তৈরী করতে হবে এবং RunnableImpl class কে constructor এ pass করতে হবে।
+```Runnable Interface
+class RunnableImpl implements Runnable { 
+
+	public void run() 
+	{ 
+		System.out.println("run"); 
+	} 
+} 
+```
+
+2. এরপর Thread এর একটা object তৈরী করতে হবে এবং RunnableImpl class কে constructor এ pass করতে হবে।
+
+```Runnable Interface Thread Object
+Thread thread = new Thread(new RunnableImpl());
+```
+
+3. তারপর আমাদেরকে thread object টা চালাতে হবে start() মেথড কল করে।
+
+```Start Thread
+thread.start(); 
+```
 	
-	```Runnable Interface Thread Object
-	Thread thread = new Thread(new RunnableImpl());
-	```
-	
-	3. তারপর আমাদেরকে thread object টা চালাতে হবে start() মেথড কল করে।
-	
-	```Start Thread
-	thread.start(); 
-	```
-	
-	### Thread Class
-	1. প্রথমে একটা ক্লাস বানাতে হবে যেটা Thread class কে extend করবে। 
-	
-	```Thread Class
-	class ThreadImpl extends Thread { 
-  
-        public void run() 
-        { 
-            System.out.println("run"); 
-        } 
-    } 
-	```
-	
-	2. এরপর Thread এর একটা object তৈরী করতে হবে।
-	
-	```Thread Object
-	ThreadImpl thread = new ThreadImpl();
-	```
-	
-	3. তারপর আমাদেরকে thread object টা চালাতে হবে start() মেথড কল করে।
-	
-	```Start Thread
-	thread.start(); 
-	```
+### Thread Class
+1. প্রথমে একটা ক্লাস বানাতে হবে যেটা Thread class কে extend করবে। 
+
+```Thread Class
+class ThreadImpl extends Thread { 
+
+	public void run() 
+	{ 
+		System.out.println("run"); 
+	} 
+} 
+```
+
+2. এরপর Thread এর একটা object তৈরী করতে হবে।
+
+```Thread Object
+ThreadImpl thread = new ThreadImpl();
+```
+
+3. তারপর আমাদেরকে thread object টা চালাতে হবে start() মেথড কল করে।
+
+```Start Thread
+thread.start(); 
+```
+
+###  Creating Multiple Thread 
