@@ -78,4 +78,21 @@ ThreadImpl thread = new ThreadImpl();
 thread.start(); 
 ```
 
-###  Creating Multiple Thread 
+### Creating Multiple Thread 
+একটি প্রোগ্রামের ভিতর আমরা যখন একাধিক থ্রেড তৈরী করে রান করি তখন সেটা হয় multithreading.
+
+```Multithreading
+public class MultiThreading extends Thread{
+    public void run(){
+        System.out.println(Thread.currentThread().getName() + " is running...");
+    }
+    public static void main(String args[]){
+        MultiThreading t1=new MultiThreading();
+        MultiThreading t2=new MultiThreading();
+        MultiThreading t3=new MultiThreading();
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+```
