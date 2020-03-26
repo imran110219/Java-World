@@ -42,7 +42,6 @@ public class Main {
             pstmt.setInt(2,1);
             int i=pstmt.executeUpdate();
             System.out.println(i+" records updated");
-
             //CallableStatement Interface
             String csql = "{call getAuthor (?, ?)}";
             CallableStatement cstmt = con.prepareCall (csql);
