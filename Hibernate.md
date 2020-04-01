@@ -84,10 +84,11 @@
 
 **পারসিসটেন্ট ক্লাস**                 
 হাইবারনেটের মূল বিষয় হচ্ছে জাভা ক্লাস আর ডাটাবেজের টেবিলের সাথে ম্যাপিং। জাভা ক্লাস অবজেক্ট সরাসরি ডাটাবেজে সেভ হয় এবং ডাটা যখন দেখায় টেবিল থেকে অবজেক্টে এসে লোড হয়। এই জাভা ক্লাস কেই পারসিসটেন্ট ক্লাস বলে। কিছু নিয়ম আছে এই ক্লাস তৈরি করার ক্ষেত্রে, সেগুলোকে পোজো(plain old java object) প্রোগ্রামিং মডেল বলে। 
-নিয়মগুলো হলঃ             
-১. ক্লাসের একটা ডিফল্ট কন্সট্রাক্টর থাকতে হবে। 
-২. একটা id প্যারামিটার থাকতে হবে যেটা হবে প্রাইমারী key. 
-৩. সব প্যারামিটার প্রাইভেট হতে হবে এবং তাদের getter এবং setter মেথড থাকতে হবে। 
+নিয়মগুলো হলঃ       
+      
+১. ক্লাসের একটা ডিফল্ট কন্সট্রাক্টর থাকতে হবে।     
+২. একটা id প্যারামিটার থাকতে হবে যেটা হবে প্রাইমারী key.           
+৩. সব প্যারামিটার প্রাইভেট হতে হবে এবং তাদের getter এবং setter মেথড থাকতে হবে।            
 
 কোড উদাহরণ 
 
@@ -97,9 +98,9 @@ public class Student {
    private String firstName; 
    private String lastName;
 
-   public Employee() {}
+   public Student() {}
    
-   public Employee(String fname, String lname) {
+   public Student(String fname, String lname) {
       this.firstName = fname;
       this.lastName = lname;
    }
@@ -129,3 +130,101 @@ public class Student {
    }
 }
 ```
+
+*** ও/আর ম্যাপিং**
+
+হাইবারনেট ও/আর ম্যাপিং তিন ধরনের হয়ঃ            
+১. কালেকশান ম্যাপিং              
+২. অ্যাসোসিয়েশন ম্যাপিং                
+৩. কম্পনেন্ট ম্যাপিং             
+
+**১. কালেকশান ম্যাপিং**            
+* java.util.Set            
+* java.util.SortedSet            
+* java.util.List            
+* java.util.Collection            
+* java.util.Map            
+* java.util.SortedMap            
+
+**২. অ্যাসোসিয়েশন ম্যাপিং**            
+* One-to-One            
+* One-to-Many            
+* Many-to-One            
+* Many-to-Many            
+
+**৩. কম্পনেন্ট ম্যাপিং**
+
+
+**অ্যানোটেশন**            
+হাইবারনেট জাভা অবজেক্ট আর ডাটাবেজের ভেতরে ম্যাপিং করে এক্স এম এল ফাইল ব্যবহার করে। এক্স এম এল ফাইলটা বলে দেয় কোন জাভা অবজেক্ট ডাটাবেজ টেবিলের কোন কলাম নির্দেশ করে। হাইবারনেট অ্যানোটেশন হল কিছুটা নতুন পদ্ধতি এই ম্যাপিং করার জন্য। এক কথায় এটা হল এক্স এম এল এর রিপ্লেসমেন্ট। 
+
+উদাহরণঃ
+
+ডাটাবেজ টেবিল
+
+```Database
+create table STUDENT (
+   id INT NOT NULL auto_increment,
+   first_name VARCHAR(20) default NULL,
+   last_name  VARCHAR(20) default NULL,
+   PRIMARY KEY (id)
+);
+```
+
+জাভা ক্লাস 
+
+```POJO 
+@Entity
+@Table(name = "EMPLOYEE")
+public class Student {
+
+   @Id @GeneratedValue
+   @Column(name = "id")
+   private int id;
+   
+   @Column(name = "first_name")
+   private String firstName; 
+   
+   @Column(name = "last_name")
+   private String lastName;
+   
+   public int getId() {
+      return id;
+   }
+   
+   public void setId( int id ) {
+      this.id = id;
+   }
+   
+   public String getFirstName() {
+      return firstName;
+   }
+   
+   public void setFirstName( String first_name ) {
+      this.firstName = first_name;
+   }
+   
+   public String getLastName() {
+      return lastName;
+   }
+   
+   public void setLastName( String last_name ) {
+      this.lastName = last_name;
+   }
+}
+```
+নিচে বিভিন্ন ধরনের অ্যানোটেশন সম্পর্কে আলোচনা করা হলঃ
+
+১. @Entity Annotation
+
+২. @Table Annotation
+
+৩. @Id and @GeneratedValue Annotations
+
+৪. @Column Annotation
+
+**কুয়েরি**
+
+**ক্রাইটেরিয়া কুয়েরি**
+
+**নেটিভ এস কিউ এল**
