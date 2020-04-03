@@ -191,7 +191,7 @@ ResultSet এর অবজেক্ট তৈরী করতে দরকার
 * deleteRow() - বর্তমানে cursor যে row তে আছে সেই row ডিলিট হবে
 * refreshRow() - বর্তমানে cursor যে row তে আছে সেই row রিফ্রেশ হবে
 * cancelRowUpdates() - row এর আপডেট বাতিল হবে 
-* insertRow() - নতুন row যুক্ত হবে ডটাাবেজে 
+* insertRow() - নতুন row যুক্ত হবে ডাটাবেজে 
 
 
 **ট্রানসেকশান**
