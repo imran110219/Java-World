@@ -249,13 +249,24 @@ public class Student {
 
 উদাহরণঃ
 
-```query 
+FROM Clause
+
+```from  
 String hql = "FROM Student";
 Query query = session.createQuery(hql);
 List results = query.list();
 ```
 
-**ক্রাইটেরিয়া কুয়েরি**
+SELECT Clause
+
+```select  
+String hql = "SELECT E.firstName FROM Employee E";
+Query query = session.createQuery(hql);
+List results = query.list();
+```
+
+**ক্রাইটেরিয়া কুয়েরি**                
+ক্রাইটেরিয়া কুয়েরি হল যখন কোন রেসাল্ট পড়ে আনা হয় নির্দিষ্ট কোন ক্রাইটেরিয়ার ভিত্তিতে করা হয়। এর মাধ্যমে ক্রাইটেরিয়া দিয়ে ফিল্টার করে বিভিন্ন ভাবে ডাটা পড়ে আনা যায়। সেশন ইন্টারফেসের createCriteria() মেথড ব্যবহার করে Criteria অবজেক্ট তৈরি করা হয়। 
 
 **নেটিভ এস কিউ এল**
 
