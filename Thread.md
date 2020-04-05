@@ -97,4 +97,4 @@ public class MultiThreading extends Thread{
 }
 ```
 
-জাভা মাল্টিথ্রেডিং(Multithreading.md)  
+[জাভা মাল্টিথ্রেডিং](Multithreading.md)  
