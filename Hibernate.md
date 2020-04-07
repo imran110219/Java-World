@@ -269,9 +269,29 @@ List results = query.list();
 ক্রাইটেরিয়া কুয়েরি হল যখন কোন রেসাল্ট পড়ে আনা হয় নির্দিষ্ট কোন ক্রাইটেরিয়ার ভিত্তিতে করা হয়। এর মাধ্যমে ক্রাইটেরিয়া দিয়ে ফিল্টার করে বিভিন্ন ভাবে ডাটা পড়ে আনা যায়। সেশন ইন্টারফেসের createCriteria() মেথড ব্যবহার করে Criteria অবজেক্ট তৈরি করা হয়। 
 এটা হাইবারনেট ৫।২ ভার্সনে বাদ দিয়ে দেওয়া হয়েছে। 
 
-**নেটিভ এস কিউ এল**
+**নেটিভ এস কিউ এল**                
+হাইবারনেটে নেটিভ এস কিউ এল কুয়েরি ও সাপোর্ট করে। যদি আমি ওরাকল ডাটাবেজ ব্যবহার করি তাহলে ওরাকল কুয়েরি createSQLQuery() মেথডে প্যারামিটার হিসেবে ইনপুট দিলে সেটা এক্সিকিউট হয়ে যায়। নেটিভ এস কিউ এল এর মাধ্যমে stored procedure কল করা যায়। 
 
-**ক্যাশিং**
+code example
+
+```native   
+String sql = "SELECT * FROM Student";
+NativeQuery query = session.createSQLQuery(sql);
+query.addEntity(Student.class);
+List results = query.list();
+```
+
+**ক্যাশিং**           
+হাইবারনেট ক্যাশিং সিস্টেমের পারফরম্যান্স বৃদ্ধি করে। ডাটাবেজ থেকে একই ডাটা বারবার read করতে গেলে এই ক্ষেত্রে ক্যাশিং ওই ডাটা গুলো ক্যাশ করে রাখে। এজন্য ডাটাবেজে সময় হিট করা লাগে না এইজন্য এর পারফরম্যান্স ও বেড়ে যায়।                   
+হাইবারনেটে ক্যাশিং দুই রকমের হয়।             
+১ .First Level Cache
+২. Second Level Cache
+
+**ফার্স্ট লেভেল ক্যাশ**           
+ফার্স্ট লেভেল ক্যাশ ধ্নরে রাখে সেশন অবজেক্ট ডিফল্টভাবে। ট্রানজেকশন রিকুয়েস্ট পাঠানোর জন্য এইটা অবশ্যই দরকার। 
+
+**সেকেন্ড লেভেল ক্যাশ**                   
+SessionFactory object holds the second level cache data. The data stored in the second level cache will be available to entire application. But we need to enable it explicitely.
 
 **ব্যাচ প্রসেসিং** 
 
