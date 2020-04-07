@@ -9,6 +9,6 @@
 
 
 ডিজাইন প্যাটার্ন ৩ ধরনের হয় সাধারণতঃ
-1. Creational
-2. Structural
-2. Behavioral
+* [Creational](Creational.md)
+* [Structural](Structural.md)
+* [Behavioral](Behavioral.md)
