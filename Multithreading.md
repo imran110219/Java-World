@@ -98,7 +98,75 @@ public class Application {
 
 ### ২. ভোলাটাইল কি ওয়ার্ড (volatile)      
 
-volatile কি ওয়ার্ড ব্যবহার করা হয় অবজেক্ট আর প্রিমিটিভ টাইপের জন্য। এটা ব্যবহার করা হয় বিভিন্ন থ্রেডে variable এর মান আপডেট করার ক্ষেত্রে। ক্লাসকে থ্রেড সেফ করার জন্য ও এটি ব্যবহার করা হয়। থ্রেড সেফ বলতে বোঝায় একাধিক থ্রেড একটা ক্লাসের মেথড এবং প্যারামিটার একই সময়ে এক্সেস করতে পারে।  volatile কি ওয়ার্ডের ভ্যালু লোকাল cache এ সেভ করে না, এটা সেভ হয় সরাসরি main memory তে। 
+volatile কি ওয়ার্ড ব্যবহার করা হয় অবজেক্ট আর প্রিমিটিভ টাইপের জন্য। এটা ব্যবহার করা হয় বিভিন্ন থ্রেডে variable এর মান আপডেট করার ক্ষেত্রে। ক্লাসকে থ্রেড সেফ করার জন্য ও এটি ব্যবহার করা হয়। থ্রেড সেফ বলতে বোঝায় একাধিক থ্রেড একটা ক্লাসের মেথড এবং প্যারামিটার একই সময়ে এক্সেস করতে পারে।  volatile কি ওয়ার্ডের ভ্যালু লোকাল cache এ সেভ করে না, এটা সেভ হয় সরাসরি main memory তে। যদি আমরা এমন একটা প্রোগ্রাম লিখি যেখানে দুটি থ্রেড আছে একটি থ্রেড নির্দিষ্ট ভ্যারিয়েবলের ভ্যালু read করে আর অন্যটি write করে। এখানে যদি ভ্যারিয়েবল volatile না হয় তাহলে একটি থ্রেডে write হলে অন্যটিতে read করতে পারে না। 
+
+```volatile                
+public class ReaderWriterVolatile {
+    private static volatile int counter;
+    public static void main(String[] args) throws InterruptedException
+    {
+        Thread thread1 = new Thread(() -> {
+            int temp = 0;
+            while (true) {
+                if (temp != counter) {
+                    temp = counter;
+                    System.out.println("reader: value of c = " + counter);
+                }
+            }
+        });
+
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                counter++;
+                System.out.println("writer: changed value to = " + counter);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            // sleep enough time to allow reader thread to read pending changes (if it can!).
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            //exit the program otherwise other threads will be keep waiting on c to change.
+            System.exit(0);
+        });
+
+        thread1.start();
+        thread2.start();
+    }
+}
+```              
+
+Output with volatile keyword
+
+```             
+writer: changed value to = 1
+reader: value of c = 1
+writer: changed value to = 2
+reader: value of c = 2
+writer: changed value to = 3
+reader: value of c = 3
+writer: changed value to = 4
+reader: value of c = 4
+reader: value of c = 5
+writer: changed value to = 5
+```             
+
+Output without volatile keyword
+
+```             
+writer: changed value to = 1
+reader: value of c = 1
+writer: changed value to = 2
+writer: changed value to = 3
+writer: changed value to = 4
+writer: changed value to = 5
+```
 
 ### ৩. সিঙ্ক্রোনাইজ (Synchronized)          
 
