@@ -170,7 +170,48 @@ writer: changed value to = 5
 
 ### ৩. সিঙ্ক্রোনাইজ (Synchronized)          
 
+মাল্টিথ্রেডিং এর ক্ষেত্রে একাধিক থ্রেড একটি নির্দিষ্ট মেথড একই সময়ে কল করে  তখন তাকে রেস কন্ডিশন(Race Condition) বলে। এইটাকে avoid করার জন্য সিঙ্ক্রোনাইজেশন করা হয়। সিঙ্ক্রোনাইজেশন করা হলে একটি মেথডে এক সময়ে একটি থ্রেড প্রবেশ করতে পারবে এবং কাজ শেষ হলে অন্যটা প্রবেশ করবে। সিঙ্ক্রোনাইজেশন করতে হলে কোন মেথডের আগে synchronized কি ওয়ার্ড ব্যবহার করতে হয়। 
 
+```synchronize
+public class Synchronization {
+
+    private static int count = 0;
+
+    public static synchronized void increment(){
+        count++;
+    }
+
+    public static void main(String[] args) {
+
+        Thread thread1 = new Thread(new Runnable() {
+            public void run() {
+                for (int i = 0; i < 10000; i++) {
+                    increment();
+                }
+            }
+        });
+        thread1.start();
+
+        Thread thread2 = new Thread(new Runnable() {
+            public void run() {
+                for (int i = 0; i < 10000; i++) {
+                    increment();
+                }
+            }
+        });
+        thread2.start();
+
+        try {
+            thread1.join();
+            thread2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Count is: " + count);
+    }
+}
+```
 
 ### ৪. লক অবজেক্ট (Lock Objects) 
 
