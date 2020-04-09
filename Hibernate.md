@@ -291,8 +291,24 @@ List results = query.list();
 ফার্স্ট লেভেল ক্যাশ ধ্নরে রাখে সেশন অবজেক্ট ডিফল্টভাবে। ট্রানজেকশন রিকুয়েস্ট পাঠানোর জন্য এইটা অবশ্যই দরকার। 
 
 **সেকেন্ড লেভেল ক্যাশ**                   
-SessionFactory object holds the second level cache data. The data stored in the second level cache will be available to entire application. But we need to enable it explicitely.
+সেশনফ্যাক্টরি অবজেক্ট  সেকেন্ড লেভেল ক্যাশের ডাটা ধরে রাখে। সেকেন্ড লেভেল ক্যাশে যে ডাটা সেভ হয় সেটা পুরো অ্যাপ্লিকেশনে পাওয়া যায়।  কিন্তু সেটা আমাদের কনফিগারেশনে enable করে নিতে হবে। 
 
-**ব্যাচ প্রসেসিং** 
+**ব্যাচ প্রসেসিং**                     
+যখন এক সঙ্গে অনেকগুলো অবজেক্ট সেভ করা প্রয়োজন হয় তখন হাইবেরনেট এই সমস্ত পারসিস্টেন্ট অবজেক্ট সেকেন্ড লেভেল ক্যাশে সেভ করে রাখে। এত গুলো অবজেক্ট ক্যাশে ধরে রাখতে পারে না তখন OutOfMemoryException দেখায়। এই ক্ষেত্রে ব্যাচ প্রোসেসিং ব্যবহার করে সমস্যা সমাধান করা যায়। যদি ১০০০ টা অবজেক্ট সেভ করতে হয় তাহলে আমরা যদি ব্যাচ সাইজ ৫০ ধরে নেই। তাহলে প্রতি ৫০ টা ডাটা সেভ হওয়ার পর সেশন ফ্লাশ ও ক্লিয়ার করতে হয়।                      
+
+```batch 
+Session session = SessionFactory.openSession();
+Transaction tx = session.beginTransaction();
+for ( int i=0; i<100000; i++ ) {
+   Student student = new Student(.....);
+   session.save(student);
+   if( i % 50 == 0 ) { 
+      session.flush();
+      session.clear();
+   }
+}
+tx.commit();
+session.close();
+```
 
 **ইন্টারসেপ্টর** 
