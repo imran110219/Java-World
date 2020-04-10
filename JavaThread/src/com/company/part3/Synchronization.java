@@ -1,4 +1,4 @@
-package com.company;
+package com.company.part3;
 
 public class Synchronization {
 
