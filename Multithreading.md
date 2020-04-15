@@ -350,7 +350,72 @@ public class ThreadPool {
 }
 ```
 
-### ৬. কাউন্টডাউন ল্যাচেস (Countdown Latches)           
+### ৬. কাউন্টডাউন ল্যাচেস (Countdown Latches)    
+কখনো কখনো আমাদের কোন একটা প্রোগ্রাম রান করার প্রয়োজন হয় যখন আমাদের নির্দিষ্ট কিছু টাস্ক অথবা প্রোগ্রাম শেষ হবার পর। ধরে নেই আমরা একটা সাইকেল বানানোর প্রোগ্রাম রান করাতে চাই। তো এখন সাইকেলে চেইন, গিয়ার, সিট, প্যাডেল এই গুলোকে ও যদি ছোট ছোট প্রোগ্রাম হিসেবে কল্পনা করি তাহলে এই প্রোগ্রাম শেষ হবার পরই একমাত্র আমরা সাইকেলের প্রোগ্রাম রান করাতে পারবো। এই ক্ষেত্রে আমরা কিভাবে বুঝবো ছোট ছোট প্রোগ্রাম গুলো সব এক্সিকিউট হয়ে গিয়েছে। এই কাজটার জন্য কাউন্টডাউন ল্যাচেস ব্যবহার করা যায়।  আমরা যদি ৫ টা থ্রেড তৈরি করি এবং এমনটা করতে চাই যে ৫ টা থ্রেড সম্পূর্ণ হওয়ার পর মেইন থ্রেড এক্সিকিউট হবে। তাহলে আমাদের CountDownLatch এর অবজেক্ট তৈরি করতে হবে এবং প্যারামিটার হিসেবে যাবে ৫। CountDownLatch এর countDown() মেথড আছে যেটা এটার ভ্যালু ৫ থেকে শুন্য পর্যন্ত আপডেট হতে থাকে। প্রতিটা থ্রেড শেষ হয় এবং এর ভ্যালু এক করতে কমতে থাকে। সব গুলো শেষ হলে মেইন থ্রেড এক্সিকিউট হয়। await() মেথড হচ্ছে ব্লকিং মেথড যেটা সবগুলো থ্রেড শেষ না হওয়া পর্যন্ত ব্লক করে রাখে। সব গুলো এক্সিকিউট হওয়ার পর এটি পরের স্টেপ যেতে দেয়।                                 
+
+```countdownlatches
+public class CountDownLatchDemo {
+    private static final CountDownLatch COUNT_DOWN_LATCH = new CountDownLatch(5);
+    public static void main(String[] args) {
+        Thread run1 = new Thread(() -> {
+            System.out.println("Doing some work..");
+            try {
+                Thread.sleep(2000);
+                COUNT_DOWN_LATCH.countDown();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        Thread run2 = new Thread(() -> {
+            System.out.println("Doing some work..");
+            try {
+                Thread.sleep(2000);
+                COUNT_DOWN_LATCH.countDown();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        Thread run3 = new Thread(() -> {
+            System.out.println("Doing some work..");
+            try {
+                Thread.sleep(2000);
+                COUNT_DOWN_LATCH.countDown();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        Thread run4 = new Thread(() -> {
+            System.out.println("Doing some work..");
+            try {
+                Thread.sleep(2000);
+                COUNT_DOWN_LATCH.countDown();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        Thread run5 = new Thread(() -> {
+            System.out.println("Doing some work..");
+            try {
+                Thread.sleep(3000);
+                COUNT_DOWN_LATCH.countDown();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+        run1.start();
+        run2.start();
+        run3.start();
+        run4.start();
+        run5.start();
+        try {
+            COUNT_DOWN_LATCH.await();
+        } catch (InterruptedException e) {
+            //Handle when a thread gets interrupted.
+        }
+        System.out.println("All tasks have finished..");
+    }
+}
+```
 
 ### ৭. Producer-Consumer
 
