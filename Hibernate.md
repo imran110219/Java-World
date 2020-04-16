@@ -191,7 +191,7 @@ create table STUDENT (
 
 ```POJO 
 @Entity
-@Table(name = "EMPLOYEE")
+@Table(name = "STUDENT")
 public class Student {
 
    @Id @GeneratedValue
