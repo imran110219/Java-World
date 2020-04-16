@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Singleton/EagerSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Singleton/EagerSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Singleton/LazySingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Singleton/ThreadSafeSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Singleton/StaticBlockSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Singleton/StaticBlockSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SingletonPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SingletonPattern.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +21,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1376" />
-    <option name="height" value="744" />
-  </component>
   <component name="ProjectId" id="1ZQrLH4odAzqcCggTk1BgLH3Ii2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Algorithm-DataStructures/Algorithms" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -374,6 +363,8 @@
       <workItem from="1583989441734" duration="1209000" />
       <workItem from="1584782102051" duration="605000" />
       <workItem from="1586935893248" duration="3582000" />
+      <workItem from="1587023617930" duration="2819000" />
+      <workItem from="1587057257748" duration="605000" />
     </task>
     <servers />
   </component>
@@ -385,6 +376,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586936300110" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1587035806439">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587035806439" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586936291518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
