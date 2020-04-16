@@ -60,9 +60,49 @@ public class StaticBlockSingleton {
 }
 ```
 
-* Lazy Initialization                   
+* Lazy Initialization    
+Lazy Initialization এর ক্ষেত্রে global access method ব্যবহার করে instance তৈরি করা হয়। এই ক্ষেত্রে যখন আমাদের instance প্রয়োজন হবে তখনই তৈরি হবে। এইটা সিঙ্গেল থ্রেডে ভালভাবে কাজ করবে কিন্তু মাল্টিথ্রেডে কাজ করবে না। কারন একই সময়ে দুইটা থ্রেড global access method এ প্রবেশ করে তাহলে দুইটা instance তৈরি করবে, যা সিঙ্গেল প্যাটার্নের প্রিন্সিপালকে ভঙ্গ করে। এটা thread safe না। 
 
-* Thread Safe Singleton
+```lazy
+public class LazySingleton {
+    private static volatile LazySingleton instance = null;
+
+    // private constructor
+    private LazySingleton() {
+    }
+
+    public static LazySingleton getInstance() {
+        if (instance == null) {
+            instance = new LazySingleton();
+        }
+        return instance;
+    }
+}
+```
+
+* Thread Safe Singleton                 
+সিঙ্গেলটন প্যাটার্নকে thread safe করার জন্য global access method এর পূর্বে synchronized কি ওয়ার্ড ব্যবহার করা যায়। তাহলে global access method এ একসঙ্গে একাধিক থ্রেড প্রবেশ করতে পারবে না। ফলে একাধিক instance ও তৈরি হবে না।           
+
+```threadsafe
+public class ThreadSafeSingleton {
+    private static volatile ThreadSafeSingleton instance = null;
+
+    // private constructor
+    private ThreadSafeSingleton() {
+    }
+
+    public static ThreadSafeSingleton getInstance() {
+        if (instance == null) {
+            synchronized (ThreadSafeSingleton.class) {
+                if (instance == null) {
+                    instance = new ThreadSafeSingleton();
+                }
+            }
+        }
+        return instance;
+    }
+}
+```
 
 * Bill Pugh Singleton Implementation
 
