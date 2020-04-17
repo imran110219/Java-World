@@ -478,7 +478,12 @@ public class ProducerConsumer {
 }
 ```
 
-### ৮. Wait and Notify
+### ৮. ওয়েট - নোটিফাই (Wait and Notify)               
+**wait()**       
+              
+**notify()**          
+
+**notifyAll()**           
 
 ### ৯. Low-Level Producer-Consumer
 
