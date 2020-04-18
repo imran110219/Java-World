@@ -480,10 +480,70 @@ public class ProducerConsumer {
 
 ### ৮. ওয়েট - নোটিফাই (Wait and Notify)               
 **wait()**       
-              
-**notify()**          
+wait() মেথড  কোন থ্রেডের ভেতর কল করলে সেই থ্রেড sleep() হয়ে যায়। এবং অন্য থ্রেড যখন notify() বা notifyAll() কল করে তখন পূর্বের থ্রেড আবার শুরু করে।              
 
-**notifyAll()**           
+**notify()**          
+notify() মেথড কল করা হয় কোন থ্রেড কে চালু করার জন্য যেটা wait() মেথড কল করে sleep() করে দেওয়া হয়েছে। 
+
+**notifyAll()**       
+notifyAll() মেথড কল করা হয় কোন থ্রেড কে চালু করার জন্য যেটা wait() মেথড কল করে sleep() করে দেওয়া হয়েছে। notifyAll() সকল থ্রেড কে সক্রিয় করে যেগুলো wait() মেথড দ্বারা থামিয়ে দেওয়া হয়েছিল। 
+
+```waitnotify
+public class WaitNotify {
+    public static void main(String[] args) throws InterruptedException {
+
+        WaitNotify waitNotify = new WaitNotify();
+
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    waitNotify.produce();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        Thread t2 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    waitNotify.consume();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        t1.start();
+        t2.start();
+
+        t1.join();
+        t2.join();
+    }
+
+    public void produce() throws InterruptedException {
+        synchronized (this) {
+            System.out.println("Producer thread running ....");
+            wait();
+            System.out.println("Resumed.");
+        }
+    }
+
+    public void consume() throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
+        Thread.sleep(2000);
+        synchronized (this) {
+            System.out.println("Waiting for return key.");
+            scanner.nextLine();
+            System.out.println("Return key pressed.");
+            notify();
+            Thread.sleep(5000);
+        }
+    }
+}
+```    
 
 ### ৯. Low-Level Producer-Consumer
 
