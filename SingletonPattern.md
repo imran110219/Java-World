@@ -104,13 +104,8 @@ public class ThreadSafeSingleton {
 }
 ```
 
-* Bill Pugh Singleton Implementation
 
-* Using Reflection to destroy Singleton Pattern
-
-* Enum Singleton
-
-* Serialization and Singleton
-
-
-**সুবিধা - অসুবিধা**
+**সুবিধা - অসুবিধা**                  
+* সিঙ্গেলটন প্যাটার্ন ক্লাসের শুধুমাত্র একটা অবজেক্ট তৈরি করা যায়। 
+* এইটা তৈরি করা যাবে গ্লোবাল অ্যাক্সেস মেথডের মাধ্যমে।                                      
+* এটা Single Responsibility Principle ভঙ্গ করে। 
