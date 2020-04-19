@@ -545,9 +545,84 @@ public class WaitNotify {
 }
 ```    
 
-### ৯. Low-Level Producer-Consumer
+### ৯. Re-entrant Locks                  
+ReentrentLock ক্লাস Lock ইন্টারফেস কে impliment করে। এইটার কাজ কিছুটা সিঙ্ক্রোনাইজেশনের মত। কোন মেথড কে সিঙ্ক্রোনাইজ না করেই ReentrentLock ব্যবহার করে একই ধরনের কাজ করা যায়। অর্থাৎ এটি ব্যবহার করে নির্দিষ্ট ব্লকে শুধুমাত্র একই সময়ে একটি থ্রেড প্রবেশ করবে এমন ব্যবস্থা করা যায়।  lock() মেথড লক করে নির্দিষ্ট অংশ এক্সিকিউট করে আর unlock() মেথড লক টা রিলিজ করে দেয় যাতে অন্য মেথড প্রবেশ করতে পারে।                                   
 
-### ১০. Re-entrant Locks
+```reentrentLock
+public class ReentrantLockExample {
+
+    private ReentrantLock lock = new ReentrantLock(true);
+
+    private int counter = 0;
+
+    void perform() {
+
+        lock.lock();
+        System.out.println("Thread - " + Thread.currentThread().getName() + " acquired the lock");
+        try {
+            System.out.println("Thread - " + Thread.currentThread().getName() + " processing");
+            counter++;
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        } finally {
+            lock.unlock();
+            System.out.println("Thread - " + Thread.currentThread().getName() + " released the lock");
+        }
+    }
+
+    private void performTryLock() {
+
+        System.out.println("Thread - " + Thread.currentThread().getName() + " attempting to acquire the lock");
+        try {
+            boolean isLockAcquired = lock.tryLock(2, TimeUnit.SECONDS);
+            if (isLockAcquired) {
+                try {
+                    System.out.println("Thread - " + Thread.currentThread().getName() + " acquired the lock");
+
+                    System.out.println("Thread - " + Thread.currentThread().getName() + " processing");
+                    sleep(1000);
+                } finally {
+                    lock.unlock();
+                    System.out.println("Thread - " + Thread.currentThread().getName() + " released the lock");
+
+                }
+            }
+        } catch (InterruptedException exception) {
+            exception.printStackTrace();
+        }
+        System.out.println("Thread - " + Thread.currentThread().getName() + " could not acquire the lock");
+    }
+
+    public ReentrantLock getLock() {
+        return lock;
+    }
+
+    boolean isLocked() {
+        return lock.isLocked();
+    }
+
+    boolean hasQueuedThreads() {
+        return lock.hasQueuedThreads();
+    }
+
+    int getCounter() {
+        return counter;
+    }
+
+    public static void main(String[] args) {
+
+        final int threadCount = 2;
+        final ExecutorService service = Executors.newFixedThreadPool(threadCount);
+        final ReentrantLockExample object = new ReentrantLockExample();
+
+        service.execute(object::perform);
+        service.execute(object::performTryLock);
+
+        service.shutdown();
+
+    }
+}
+```
 
 ### ১১. Deadlock
 
