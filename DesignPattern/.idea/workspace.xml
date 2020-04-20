@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../DesignPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPattern.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrototypePattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../PrototypePattern.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
       <recent name="Behavioral.State" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestSingleton">
+  <component name="RunManager" selected="Application.TestPrototype">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -365,6 +367,7 @@
       <workItem from="1586935893248" duration="3582000" />
       <workItem from="1587023617930" duration="2819000" />
       <workItem from="1587057257748" duration="605000" />
+      <workItem from="1587372580426" duration="1918000" />
     </task>
     <servers />
   </component>
