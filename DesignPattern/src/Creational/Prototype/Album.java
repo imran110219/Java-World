@@ -3,7 +3,7 @@ package Creational.Prototype;
 /**
  * Created by Imran on 2/24/2020.
  */
-public class Album implements PrototypeCapable {
+public class Album implements Prototype {
 
     private String name;
 
@@ -16,7 +16,7 @@ public class Album implements PrototypeCapable {
     }
 
     @Override
-    public PrototypeCapable clone() throws CloneNotSupportedException {
+    public Prototype clone() throws CloneNotSupportedException {
         System.out.println("Cloning Album Object.........");
         return (Album)super.clone();
     }

@@ -14,7 +14,7 @@ public class PrototypeFactory {
         public static final String SHOW = "show";
     }
 
-    private  static Map<String, PrototypeCapable> prototypes = new HashMap<String, PrototypeCapable>();
+    private  static Map<String, Prototype> prototypes = new HashMap<String, Prototype>();
 
     static
     {
@@ -22,7 +22,7 @@ public class PrototypeFactory {
         prototypes.put(ModelType.ALBUM, new Album());
         prototypes.put(ModelType.SHOW, new Show());
     }
-    public static PrototypeCapable getInstance(final String s) throws CloneNotSupportedException{
-        return ((PrototypeCapable) prototypes.get(s)).clone();
+    public static Prototype getInstance(final String s) throws CloneNotSupportedException{
+        return ((Prototype) prototypes.get(s)).clone();
     }
 }

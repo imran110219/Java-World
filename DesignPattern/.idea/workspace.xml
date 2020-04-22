@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../DesignPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPattern.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Creational/Prototype/Prototype.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Album.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/PrototypeCapable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/PrototypeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/PrototypeFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Show.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Show.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Prototype/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Prototype/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/PrototypeCapable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/PrototypeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Prototype/PrototypeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Prototype/Show.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PrototypePattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../PrototypePattern.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -368,6 +378,7 @@
       <workItem from="1587023617930" duration="2819000" />
       <workItem from="1587057257748" duration="605000" />
       <workItem from="1587372580426" duration="2602000" />
+      <workItem from="1587571741389" duration="2965000" />
     </task>
     <servers />
   </component>
@@ -383,22 +394,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587035806439" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1587376956937">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1587583235144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587376956937" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1587376956937">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587583235144" />
+    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1587583235144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587376956937" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1587376956937">
+    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587583235144" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1587583235144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587376956937" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1587376956937">
+    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587583235144" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1587583235144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587376956937" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587583235144" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586936291518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
