@@ -25,7 +25,7 @@
 * Abstract Factory Pattern
 * [সিঙ্গেলটন প্যাটার্ন (Singleton Pattern)](SingletonPattern.md)
 * [প্রোটোটাইপ প্যাটার্ন  (Prototype Pattern)](PrototypePattern.md)
-* Builder Pattern
+* [বিল্ডার প্যাটার্ন (Builder Pattern)](BiulderPattern.md)
 * Object Pool Pattern
 
 
