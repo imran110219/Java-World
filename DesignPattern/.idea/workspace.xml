@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../BiulderPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../BiulderPattern.md" afterDir="false" />
-    </list>
+    <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -367,7 +365,7 @@
       <workItem from="1587057257748" duration="605000" />
       <workItem from="1587372580426" duration="2602000" />
       <workItem from="1587571741389" duration="2965000" />
-      <workItem from="1587889968718" duration="298000" />
+      <workItem from="1587889968718" duration="908000" />
     </task>
     <servers />
   </component>
@@ -403,6 +401,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586936291518" />
+    <state x="425" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1587921946045">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="425" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1587921946045" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
