@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Creational/Prototype/Prototype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Album.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/PrototypeCapable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/PrototypeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/PrototypeFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Show.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Creational/Prototype/Show.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Prototype/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Prototype/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/PrototypeCapable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/PrototypeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Prototype/PrototypeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Prototype/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Prototype/Show.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrototypePattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../PrototypePattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BiulderPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../BiulderPattern.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +45,7 @@
       <recent name="Behavioral.State" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestPrototype">
+  <component name="RunManager" selected="Application.TestBuilder">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -379,6 +367,7 @@
       <workItem from="1587057257748" duration="605000" />
       <workItem from="1587372580426" duration="2602000" />
       <workItem from="1587571741389" duration="2965000" />
+      <workItem from="1587889968718" duration="298000" />
     </task>
     <servers />
   </component>
