@@ -4,8 +4,6 @@
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../DesignPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPattern.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Builder/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Builder/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Creational/Builder/TestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creational/Builder/TestBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
       <recent name="Behavioral.State" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestBuilder">
+  <component name="RunManager" selected="Application.TestSingleton">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -125,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDecorator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDecorator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Structural.Decorator.TestDecorator" />
       <module name="DesignPattern" />
       <extension name="coverage">
@@ -177,7 +175,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSingleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSingleton" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Creational.Singleton.TestSingleton" />
       <module name="DesignPattern" />
       <extension name="coverage">
@@ -328,12 +326,6 @@
       <item itemvalue="Application.TestDecorator" />
       <item itemvalue="Application.TestSingleton" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.TestSingleton" />
-        <item itemvalue="Application.TestDecorator" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -371,7 +363,7 @@
       <workItem from="1587372580426" duration="2602000" />
       <workItem from="1587571741389" duration="2965000" />
       <workItem from="1587889968718" duration="1507000" />
-      <workItem from="1587966374332" duration="4460000" />
+      <workItem from="1587966374332" duration="6057000" />
     </task>
     <servers />
   </component>
@@ -387,22 +379,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587035806439" />
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1587975658603">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1588009529928">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587975658603" />
-    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1587975658603">
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588009529928" />
+    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1588009529927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587975658603" />
-    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1587975658602">
+    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588009529927" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1588009529927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587975658602" />
-    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1587975658603">
+    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588009529927" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1588009529928">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587975658603" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588009529928" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586936291518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
