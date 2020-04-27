@@ -28,5 +28,8 @@ public class TestBuilder {
                 .build();
 
         System.out.println(user3);
+
+        House house = new House.HouseBuilder(6,1,2).build();
+        System.out.println(house);
     }
 }
