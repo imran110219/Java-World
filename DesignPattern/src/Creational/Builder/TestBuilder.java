@@ -29,7 +29,10 @@ public class TestBuilder {
 
         System.out.println(user3);
 
-        House house = new House.HouseBuilder(6,1,2).build();
-        System.out.println(house);
+        House house1 = new House.HouseBuilder(6,1).windows(2).build();
+        System.out.println(house1);
+
+        House house2 = new House.HouseBuilder(6,1).windows(2).garage(40).build();
+        System.out.println(house2);
     }
 }

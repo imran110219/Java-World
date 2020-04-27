@@ -22,7 +22,7 @@
 **ক্রিয়েশনাল ডিজাইন প্যাটার্ন (Creational Design Pattern)**             
 ক্রিয়েশনাল ডিজাইন প্যাটার্ন হল কিভাবে আমরা অবজেক্ট তৈরি করতে পারি তার বিভিন্ন পদ্ধতি। কোন বড় প্রোজেক্টে কাজ করার সময় যদি নরমালি যে ভাবে তৈরি করি সেভাবেই করতে থাকি তাহলে প্রোজেক্টটা অনেক বড় হয়ে গেলে এটা জটিল অবস্থায় রূপ নিবে। ক্রিয়েশনাল ডিজাইন প্যাটার্ন  অবজেক্ট তৈরি করার প্রক্রিয়াটা নিয়ন্ত্রন করে। বিভিন্ন ধরনের ক্রিয়েশনাল ডিজাইন প্যাটার্ন আছে, সেগুলো হলঃ                                          
 * [ফ্যাক্টরি মেথড প্যাটার্ন (Factory Method Pattern)](FactoryPattern.md)                    
-* Abstract Factory Pattern                 
+* [অ্যাবস্ট্রাক্ট ফ্যাক্টরি প্যাটার্ন (Abstract Factory Pattern)](AbstractFactoryPattern.md)                 
 * [সিঙ্গেলটন প্যাটার্ন (Singleton Pattern)](SingletonPattern.md)         
 * [প্রোটোটাইপ প্যাটার্ন  (Prototype Pattern)](PrototypePattern.md)        
 * [বিল্ডার প্যাটার্ন (Builder Pattern)](BiulderPattern.md)             

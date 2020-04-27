@@ -28,14 +28,18 @@ public class House {
     public static class HouseBuilder{
         private final int walls;
         private final int doors;
-        private final int windows;
+        private int windows;
         private int garden;
         private int garage;
 
-        public HouseBuilder(int wallNumber, int doorNumber, int wondowNumber){
+        public HouseBuilder(int wallNumber, int doorNumber){
             this.walls = wallNumber;
             this.doors = doorNumber;
-            this.windows = wondowNumber;
+        }
+
+        public HouseBuilder windows(int windowNumber){
+            this.windows = windowNumber;
+            return this;
         }
 
         public HouseBuilder garden(int gardenSize){
