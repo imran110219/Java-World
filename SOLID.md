@@ -6,3 +6,15 @@
 * L — Liskov Substitution Principle                  
 * I — Interface Segregation Principle               
 * D — Dependency Inversion Principle              
+
+**Single Responsibility Principle**        
+> A class should have one, and only one, reason to change.    
+
+**Open-Closed Principle**          
+> Objects or entities should be open for extension, but closed for modification.                
+
+**Liskov Substitution Principle**           
+
+**Interface Segregation Principle**           
+
+**Dependency Inversion Principle**            
