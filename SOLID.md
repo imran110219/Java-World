@@ -61,7 +61,8 @@ public class SendMessages {
 ```
 
 **Open-Closed Principle**          
-> Objects or entities should be open for extension, but closed for modification.                
+> Objects or entities should be open for extension, but closed for modification.           
+     
 
 **Liskov Substitution Principle**           
 
