@@ -9,6 +9,55 @@
 
 **Single Responsibility Principle**        
 > A class should have one, and only one, reason to change.    
+সিঙ্গেল রেস্পন্সিবিলিটি প্রিন্সিপাল বলতে বুঝায় একটি ক্লাস সবসময় এক ধরনের কাজ করবে এবং ওই ক্লাসটা যদি পরিবর্তন করা হয় তাহলে তাহলে সেটা একটি কারনেই পরিবর্তন করা যাবে। এইটা লক্ষ্য রেখে যদি কোডিং করা হয় তাহলে কিছু সুবিধা আছে। সেগুলো হলঃ                                           
+১. একটা ক্লাসের একটা রেস্পন্সিবিলিটি থাকার জন্য সেটার টেস্ট সহজে করা যায়। 
+২. একটি ক্লাস অন্য ক্লাসের উপর কম নির্ভর করে অর্থাৎ এইটা lower coupling হয়। 
+৩. কোডিং প্যাটার্ন খুব গোছানো হয় এবং খুব সহজেই কোন মেথড খুজে পাওয়া যায়।  
+
+```
+public class Person {
+    private String name;
+    private String email;
+	private String phone;
+ 
+    //constructor, getters and setters
+ 
+    // methods that directly relate to the person properties
+	
+    public boolean sendMail(String messages, String email){
+        return sendMail(messages, email);
+    }
+ 
+    public boolean sendPhoneMessages(String messages, String email){
+        return sendPhoneMessages(messages, email);
+    }
+}
+```
+
+উপরের কোড থেকে আমরা দেখতে পাই Person ক্লাসের ভিতর এই ক্লাসের ভ্যারিয়েবল গুলো আছে এবং একই সাথে এই ক্লাসের সাথে সম্পর্কযুক্ত মেথড আছে। এই ক্ষেত্রে সিঙ্গেল রেস্পন্সিবিলিটি প্রিন্সিপাল ফলো করা হয় নি। কারন এই ক্লাসের ভেতর দুই ধরনের জিনিস আছে একটা হল ডাটা অবজেক্ট আরেকটা হল কাওকে মেসেজ পাঠানোর মেথড। এখন আমরা সিঙ্গেল রেস্পন্সিবিলিটি প্রিন্সিপাল অনুসরন করে এই ক্লাস ডিজাইন করবো।            
+
+```
+public class Person {
+    private String name;
+    private String email;
+	private String phone;
+ 
+    //constructor, getters and setters
+}
+```
+
+```
+public class SendMessages {
+	
+    public boolean sendMail(String messages, String email){
+        return sendMail(messages, email);
+    }
+ 
+    public boolean sendPhoneMessages(String messages, String email){
+        return sendPhoneMessages(messages, email);
+    }
+}
+```
 
 **Open-Closed Principle**          
 > Objects or entities should be open for extension, but closed for modification.                
