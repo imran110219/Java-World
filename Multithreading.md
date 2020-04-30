@@ -747,7 +747,79 @@ public class DeadLock {
 ```
 
 ### ১২. সেমাফোর (Semaphores)                    
+যখন একটা কমন প্রোগ্রাম থাকে যেটাতে বিভিন্ন থ্রেডের প্রবেশ করতে হয়। তবে সব গুলো থ্রেড একবারে না একটা একটা করে অথবা নির্দিষ্ট সংখ্যক করে। সেমাফোর এই থ্রেডের এই অ্যাক্সেস নিয়ন্ত্রন করে। এটা নির্দিষ্ট করে দেয় সর্বোচ্চ কতটা থ্রেড ওই নির্দিষ্ট ব্লকে প্রবেশ করতে পারবে।    
 
+```
+public class Connection {
+    private static Connection instance = new Connection();
+
+    private Semaphore sem = new Semaphore(10, true);
+
+    private int connections = 0;
+
+    private Connection() {
+
+    }
+
+    public static Connection getInstance() {
+        return instance;
+    }
+
+    public void connect() {
+        try {
+            sem.acquire();
+        } catch (InterruptedException e1) {
+            e1.printStackTrace();
+        }
+
+        try {
+            doConnect();
+        } finally {
+            sem.release();
+        }
+    }
+
+    public void doConnect() {
+
+        synchronized (this) {
+            connections++;
+            System.out.println("Current connections: " + connections);
+        }
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        synchronized (this) {
+            connections--;
+        }
+
+    }
+}
+```
+
+```
+public class SemaphoreExample {
+    public static void main(String[] args) throws Exception {
+
+        ExecutorService executor = Executors.newCachedThreadPool();
+
+        for(int i=0; i < 200; i++) {
+            executor.submit(new Runnable() {
+                public void run() {
+                    Connection.getInstance().connect();
+                }
+            });
+        }
+
+        executor.shutdown();
+
+        executor.awaitTermination(1, TimeUnit.DAYS);
+    }
+}
+```
 
 ### ১৩. Callable and Future
 
