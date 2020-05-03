@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FactoryPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryPattern.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
       <recent name="Behavioral.State" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestFactory">
+  <component name="RunManager" selected="Application.TestAbstractFactory">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -365,7 +364,7 @@
       <workItem from="1587889968718" duration="1507000" />
       <workItem from="1587966374332" duration="7294000" />
       <workItem from="1588332836255" duration="2510000" />
-      <workItem from="1588525482571" duration="568000" />
+      <workItem from="1588525482571" duration="1030000" />
     </task>
     <servers />
   </component>

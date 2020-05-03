@@ -88,6 +88,8 @@ public class Student extends Person {
 **Liskov Substitution Principle**           
 > Derived classes must be substitutable for their base classes.              
 
+Liskov Substitution Principle একটু জটিল কনসেপ্ট। 
+
 
 **Interface Segregation Principle**           
 
