@@ -821,6 +821,52 @@ public class SemaphoreExample {
 }
 ```
 
-### ১৩. Callable and Future
+### ১৩. কলএবল ও ফিউচার (Callable and Future)                              
+থ্রেড ইমপ্লিমেন্ট করা যায় ২ টি উপায়ে Thread ক্লাস ও Runnable ইন্টারফেস ব্যবহার করে। কিন্তু এইভাবে থ্রেড তৈরি করলে এরা কোন ভ্যালু রিটার্ন করে না। Callable ইন্টারফেস ইমপ্লিমেন্ট করলে সেটাতে আমরা ভ্যালু রিটার্ন করতে পারি। এর call() মেথডকে ইমপ্লিমেন্ট করতে হয় এবং এর অবজেক্ট সেভ করে রাখা হয় Future ক্লাসের অবজেক্ট তৈরি করে।                                          
+
+```
+public class CallableAndFuture {
+    public static void main(String[] args) {
+        ExecutorService executor = Executors.newCachedThreadPool();
+
+        Future<Integer> future = executor.submit(new Callable<Integer>() {
+
+            @Override
+            public Integer call() throws Exception {
+                Random random = new Random();
+                int duration = random.nextInt(4000);
+
+                if(duration > 2000) {
+                    throw new IOException("Sleeping for too long.");
+                }
+
+                System.out.println("Starting ...");
+
+                try {
+                    Thread.sleep(duration);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                System.out.println("Finished.");
+
+                return duration;
+            }
+
+        });
+
+        executor.shutdown();
+
+        try {
+            System.out.println("Result is: " + future.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            IOException ex = (IOException) e.getCause();
+            System.out.println(ex.getMessage());
+        }
+    }
+}
+```
 
 ### ১৪. Interrupting Threads
