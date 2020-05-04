@@ -88,9 +88,111 @@ public class Student extends Person {
 **Liskov Substitution Principle**           
 > Derived classes must be substitutable for their base classes.              
 
-Liskov Substitution Principle একটু জটিল কনসেপ্ট। 
+Liskov Substitution Principle একটু জটিল কনসেপ্ট। যদি ক্লাস A ক্লাস B এর সাবটাইপ তাহলে ক্লাস B কে অবশ্যই A স্থানে রাখা যায় যে কোন ধরনের সমস্যা ছাড়াই। একটু উদাহরন দিলে বিষয় টা পরিষ্কার হবে। আমাদের একটা Car ইন্টারফেস আছে এবং দুইটি মেথড আছে  turnOnEngine() ও accelerate()। MotorCar ক্লাসকে আমরা যদি Car ইন্টারফেস দ্বারা ইমপ্লিমেন্ট করি তাহলে আমরা turnOnEngine() ও accelerate() দুইটি মেথড ই ওভাররাইট করা যাবে। কিন্তু ElectricCar ক্লাস কে ইমপ্লিমেন্ট করতে যাই তাহলে turnOnEngine() মেথডটি আমরা ওভাররাইট করতে পারবো না কারন ElectricCar এর Engine থাকে না। সুতরাং এই ক্ষেত্রে Liskov Substitution Principle অনুসরণ করা হয় নি। আমাদের কে Car ইন্টারফেসকে এমন ভাবে ডিজাইন করতে হবে যেন সব ধরনের যানবাহন কে ইমপ্লিমেন্ট করতে পারে পুরোপুরি ভাবে।                     
 
+```
+public interface Car {
+ 
+    void turnOnEngine();
+    void accelerate();
+}
+```
 
-**Interface Segregation Principle**           
+```
+public class MotorCar implements Car {
+ 
+    private Engine engine;
+ 
+    //Constructors, getters + setters
+ 
+    public void turnOnEngine() {
+        //turn on the engine!
+        engine.on();
+    }
+ 
+    public void accelerate() {
+        //move forward!
+        engine.powerOn(1000);
+    }
+}
+```
 
-**Dependency Inversion Principle**            
+```
+public class ElectricCar implements Car {
+ 
+    public void turnOnEngine() {
+        throw new AssertionError("I don't have an engine!");
+    }
+ 
+    public void accelerate() {
+        //this acceleration is crazy!
+    }
+}
+```
+
+**Interface Segregation Principle**      
+> A client should never be forced to implement an interface that it doesn't use            
+
+Interface Segregation Principle হল কোন বড় ইন্টারফেসকে ভেঙ্গে ছোট ছোট ইন্টারফেসে করা। একটি ইন্টারফেসে অনেক ধরনের মেথড যদি রাখি তাহলে সমস্যা হচ্ছে আমরা কোন ক্লাসকে যদি এই বড় ইন্টারফেস ছাড়া ইমপ্লিমেন্ট করি। তখন আমাদের সমস্ত মেথড ওই ক্লাসে ইমপ্লিমেন্ট করতে হয় কিন্তু অনেক সময় সব মেথড আমাদের দরকার পড়ে না। এই জন্য একই ধরনের মেথড দিয়ে আমরা ছোট ছোট ইন্টারফেস তৈরি করবো তাহলে প্রয়োজনমত আমরা যত ধরনের ইন্টারফেস থাকে আমরা ইমপ্লিমেন্ট করে নিতে পারবো।               
+
+```
+public interface Worker{
+    public void work();
+    public void sleep();
+}
+
+public class HumanWorker implements Worker{
+
+    public void work(){
+        // code
+    }
+
+    public void sleep(){
+        // code
+    }
+}
+
+class RobotWorker implements Worker{
+    
+	public void work(){
+        // code
+    }
+
+    public void sleep(){
+        // Robot can't sleep
+    }
+}
+``` 
+
+```
+public interface Worker{
+    public void work();
+}
+
+public interface Sleep{
+    public void sleep();
+}
+
+public class HumanWorker implements Worker, Sleep{
+
+    public void work(){
+        // code
+    }
+
+    public void sleep(){
+        // code
+    }
+}
+
+class RobotWorker implements Worker{
+    
+	public void work(){
+        // code
+    }
+}
+```    
+
+**Dependency Inversion Principle**         
+> High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+   
