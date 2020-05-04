@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Multithreading.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Multithreading.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,6 +366,7 @@
       <workItem from="1588332836255" duration="2510000" />
       <workItem from="1588525482571" duration="1623000" />
       <workItem from="1588582336500" duration="58000" />
+      <workItem from="1588590972196" duration="861000" />
     </task>
     <servers />
   </component>
