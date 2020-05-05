@@ -164,6 +164,8 @@ class RobotWorker implements Worker{
 }
 ``` 
 
+উপরোক্ত কোডে Interface Segregation Principle অনুসরন করা হয় নি। কারন RobotWorker ক্লাসে sleep() মেথড কাজ করবে না। এখানে আমাদের ইন্টারফেস ভেঙ্গে দুই ভাগ করতে হবে। নিচে এই প্রিন্সিপাল ফলো কোডের উদাহরন দেওয়া হলঃ               
+
 ```
 public interface Worker{
     public void work();
