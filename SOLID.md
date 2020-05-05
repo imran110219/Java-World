@@ -195,4 +195,51 @@ class RobotWorker implements Worker{
 **Dependency Inversion Principle**         
 > High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
-   
+Dependency Inversion Principle হল ক্লাসগুলোর ভেতরে যেন নিজেদের ভেতরে নির্ভরশীলতা না থাকে সেইটা নিশ্চিত করে। এই প্রিন্সিপালের দুটি বৈশিষ্ট্য আছে। সেগুলো হলঃ                                 
+১. হাই লেভেল মডিউল কখনো লো লেভেল মডিউলের উপর নির্ভর করতে পারবে না। উভয় মডিউল অ্যাবস্ট্রাকশান এর উপর নির্ভর করবে।                          
+২. অ্যাবস্ট্রাকশান ডিটেইলস উপর নির্ভর করবে না। ডিটেইলস অ্যাবস্ট্রাকশান এর উপর নির্ভর করবে।                        
+
+```
+class Post
+{
+    private ErrorLogger errorLogger = new ErrorLogger();
+
+    void CreatePost(Database db, string postMessage)
+    {
+        try
+        {
+            db.Add(postMessage);
+        }
+        catch (Exception ex)
+        {
+            errorLogger.log(ex.ToString())
+        }
+    }
+}
+```    
+
+উপরোক্ত কোডে ErrorLogger এর অবজেক্ট Post এর উপর নির্ভরশীল। এইটা এই প্রিন্সিপাল অনুসরণ করা হয় নি। এখন আমরা প্রিন্সিপাল ফলো করে কোড করবো।               
+
+```
+class Post
+{
+    private Logger _logger;
+
+    public Post(Logger injectedLogger)
+    {
+        _logger = injectedLogger;
+    }
+
+    void CreatePost(Database db, string postMessage)
+    {
+        try
+        {
+            db.Add(postMessage);
+        }
+        catch (Exception ex)
+        {
+            logger.log(ex.ToString())
+        }
+    }
+}
+```
