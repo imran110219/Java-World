@@ -11,9 +11,10 @@
     <title>$Title$</title>
 </head>
 <body>
-  <a href="generic">Click here to call Generic Servlet</a>
+    <a href="servlet">Click here to call Servlet</a>
     <br>
-  <a href="http">Click here to call Http Servlet</a>
-
+    <a href="generic">Click here to call Generic Servlet</a>
+    <br>
+    <a href="http">Click here to call Http Servlet</a>
 </body>
 </html>

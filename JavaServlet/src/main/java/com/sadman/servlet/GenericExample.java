@@ -7,7 +7,7 @@ import javax.servlet.ServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class Generic extends GenericServlet {
+public class GenericExample extends GenericServlet {
     public void service(ServletRequest request, ServletResponse response)
             throws IOException, ServletException {
         response.setContentType("text/html");

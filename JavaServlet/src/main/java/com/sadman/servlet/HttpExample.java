@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class Http extends HttpServlet {
+public class HttpExample extends HttpServlet {
     private String mymsg;
 
     public void init() throws ServletException {
