@@ -25,7 +25,6 @@ public class HttpExample extends HttpServlet {
     }
 
     public void destroy() {
-        // Leaving empty. Use this if you want to perform
-        //something at the end of Servlet life cycle.
+        System.out.println("Servlet is destroyed");
     }
 }
