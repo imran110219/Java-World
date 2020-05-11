@@ -1,6 +1,6 @@
 package Creational.Factory;
 
-import Creational.AbstractFactory.Location;
+import Creational.AbstractFactory.Style;
 
 /**
  * Created by Imran on 2/22/2020.
@@ -11,7 +11,7 @@ public abstract class Car {
 
     }
 
-    public Car(CarType luxury, Location location) {
+    public Car(CarType luxury, Style style) {
     }
 
     private void arrangeParts() {

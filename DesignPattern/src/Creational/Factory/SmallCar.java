@@ -1,6 +1,6 @@
 package Creational.Factory;
 
-import Creational.AbstractFactory.Location;
+import Creational.AbstractFactory.Style;
 
 /**
  * Created by Imran on 2/22/2020.
@@ -12,8 +12,8 @@ public class SmallCar extends Car {
         construct();
     }
 
-    public SmallCar(Location location) {
-        super(CarType.SMALL, location);
+    public SmallCar(Style style) {
+        super(CarType.SMALL, style);
         construct();
     }
 
