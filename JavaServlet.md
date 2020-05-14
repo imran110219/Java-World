@@ -42,11 +42,34 @@ public void service(ServletRequest request, ServletResponse response)
 }
 ```
 
-**doGet() মেথড**
+**doGet() মেথড**              
+যদি কোন get রিকুয়েস্ট পাঠানো হয় কিন্তু মেথডের নাম উল্লেখ করা না থাকে তাহলে ডিফল্টভাবে doGet() মেথড কল হয়।        
 
-**doPost() মেথড**
+```
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+   throws ServletException, IOException {
+   // Servlet code
+}
+```
 
-**destroy() মেথড**
+**doPost() মেথড**                          
+যদি কোন post রিকুয়েস্ট পাঠানো হয় কিন্তু মেথডের নাম উল্লেখ করা না থাকে তাহলে ডিফল্টভাবে doPost() মেথড কল হয়।        
+
+```
+public void doPost(HttpServletRequest request, HttpServletResponse response)
+   throws ServletException, IOException {
+   // Servlet code
+}
+```
+
+**destroy() মেথড**               
+যখন সার্ভলেটের কাজ শেষ হয়ে যায় আমরা এই মেথডটি কল করি। এই মেথডের ভেতরে আমরা ডাটাবেজ কানেকশান বন্ধ করা, ব্যাকগ্রাউন্ড থ্রেড বন্ধ করা এবং অন্যান্য কাজ করে নিতে পারে যে গুলো সার্ভলেটের শেষ হওয়ার সাথে সাথে শেষ করা দরকার। destroy() মেথড কল করলে সার্ভলেটটি garbage collection এ চলে যায়।                
+
+```
+public void destroy() {
+   // Finalization code...
+}
+```
 
 **সার্ভলেট এপিআই**
 
