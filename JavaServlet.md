@@ -6,6 +6,7 @@
 * সার্ভলেট ইন্টারফেস 
 * জেনেরিক সার্ভলেট
 * এইচ টি টি পি সার্ভলেট
+* কনফিগারেশন 
 * ফর্ম ডাটা
 * ক্লায়েন্ট রিকুয়েস্ট 
 * সার্ভার রেসপন্স 
@@ -80,7 +81,168 @@ javax.servlet এবং javax.servlet.http প্যাকেজের ইন্
 ৩. এইচটিটিপি সার্ভলেট ক্লাস এক্সটেন্ড করে            
 
 **সার্ভলেট ইন্টারফেস**
+
+```
+public class ServletExample implements Servlet {
+    ServletConfig config=null;
+
+    public void init(ServletConfig config) throws ServletException {
+        this.config = config;
+        System.out.println("Servlet is initialized");
+    }
+
+    public ServletConfig getServletConfig() {
+        return config;
+    }
+
+    public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
+
+        PrintWriter out=response.getWriter();
+        out.print("<html><body>");
+        out.print("<b>hello simple servlet</b>");
+        out.print("</body></html>");
+    }
+
+    public String getServletInfo() {
+        return "copyright sadman";
+    }
+
+    public void destroy() {
+        System.out.println("Servlet is destroyed");
+    }
+}
+```
  
 **জেনেরিক সার্ভলেট**
 
+```
+public class GenericExample extends GenericServlet {
+    public void service(ServletRequest request, ServletResponse response)
+            throws IOException, ServletException {
+        response.setContentType("text/html");
+        PrintWriter pwriter=response.getWriter();
+        pwriter.print("<html>");
+        pwriter.print("<body>");
+        pwriter.print("<h2>Generic Servlet Demo</h2>");
+        pwriter.print("<p>Servlet -> Generic Servlet</p>");
+        pwriter.print("</body>");
+        pwriter.print("</html>");
+    }
+}
+```
+
 **এইচটিটিপি সার্ভলেট**
+
+```
+public class HttpExample extends HttpServlet {
+    private String mymsg;
+
+    public void init() throws ServletException {
+        mymsg = "Http Servlet Demo";
+    }
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        // Setting up the content type of web page
+        response.setContentType("text/html");
+        // Writing the message on the web page
+        PrintWriter out = response.getWriter();
+        out.print("<h2>" + mymsg + "</h2>");
+        out.print("<p>Servlet -> Generic Servlet -> Http Servlet</p>");
+    }
+
+    public void destroy() {
+        System.out.println("Servlet is destroyed");
+    }
+}
+```
+
+**কনফিগারেশন**                                         
+web.xml ফাইলে সার্ভলেট ম্যাপিং করতে হয়। অর্থাৎ কোন url এ হিট করলে কোন মেথড এক্সিকিউট হবে এইটাই লেখা থাকে এই ফাইলে। নিচে এই কনফিগারেশনের উদাহরন দেওয়া হলঃ          
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>JavaServlet</display-name>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>com.sadman.servlet.ServletExample</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet</servlet-name>
+        <url-pattern>/servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GenericServlet</servlet-name>
+        <servlet-class>com.sadman.servlet.GenericExample</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GenericServlet</servlet-name>
+        <url-pattern>/generic</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HttpServlet</servlet-name>
+        <servlet-class>com.sadman.servlet.HttpExample</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HttpServlet</servlet-name>
+        <url-pattern>/http</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+```      
+
+index.html                
+```
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>$Title$</title>
+</head>
+<body>
+    <a href="servlet">Click here to call Servlet</a>
+    <br>
+    <a href="generic">Click here to call Generic Servlet</a>
+    <br>
+    <a href="http">Click here to call Http Servlet</a>
+</body>
+</html>
+```            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
