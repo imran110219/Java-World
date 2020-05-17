@@ -44,4 +44,14 @@
         <url-pattern>/http</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>com.sadman.servlet.HelloForm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/form</url-pattern>
+    </servlet-mapping>
+
 </web-app>
