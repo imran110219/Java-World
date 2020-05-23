@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-05-20T17:30:12</date>
+  <millis>1589974212370</millis>
+  <sequence>0</sequence>
+  <logger>util.LoggerExample</logger>
+  <level>INFO</level>
+  <class>util.FormatterExample</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Finnest message: Logger with DEFAULT FORMATTER</message>
+</record>
+May 20, 2020 5:30:12 PM util.FormatterExample main
+FINEST: Finnest message: Logger with SIMPLE FORMATTER

@@ -7,12 +7,16 @@
 জাভা অ্যাপ্লিকেশনে কোন ম্যাসেজ যদি ডেভোলপারের দেখার প্রয়োজন হয় তখন সাধারণভাবে System.out.println() দিয়ে console এ দেখতে পারে। কিন্তু এটা তো কোথাও সেভ হয়ে থাকে না। পরবর্তীতে কোন আলোচনা অথবা অ্যানালাইসিসের এই রিপোর্ট দরকার হয়।                    
 
 **লগিং কম্পোনেন্ট**    
-Loggers are responsible for capturing events (called LogRecords) and passing them to the appropriate Appender.
-Appenders (also called Handlers in some logging frameworks) are responsible for recording log events to a destination. Appenders use Layouts to format events before sending them to an output.
-Layouts (also called Formatters in some logging frameworks) are responsible for converting and formatting the data in a log event. Layouts determine how the data looks when it appears in a log entry.
+* Loggers কম্পোনেন্ট লগ রেকর্ড গুলোকে কালেক্ট করে এবং নির্দিষ্ট Appenders এ পৌঁছে দেয়।                          
+* Appenders/Handlers কাজ হলো লগ ইভেন্ট destination এ রেকর্ড করে রাখা। লগ রেকর্ড আউটপুটে পৌঁছানোর আগে Formatters সেগুলোকে নির্দিষ্ট ফরম্যাটে নিয়ে আসে।                  
+* Layouts/Formatters লগ ডেটার দেখতে কেমন হবে অর্থাৎ আউটলুক কেমন হবে সেটা ঠিক করে দেয়।             
 
 **লগিং ফ্রেমওয়ার্ক**                 
-   
+* java.util.logging
+* Log4j
+* Logback
+* tinylog
+* Logbook   
 
  
  
