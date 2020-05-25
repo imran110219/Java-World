@@ -1,0 +1,5 @@
+2020-05-25 13:24:03 DEBUG Log4jExample:18 - This is debug : Sadman
+2020-05-25 13:24:03 INFO  Log4jExample:22 - This is info : Sadman
+2020-05-25 13:24:03 WARN  Log4jExample:25 - This is warn : Sadman
+2020-05-25 13:24:03 ERROR Log4jExample:26 - This is error : Sadman
+2020-05-25 13:24:03 FATAL Log4jExample:27 - This is fatal : Sadman
