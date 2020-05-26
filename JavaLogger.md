@@ -18,5 +18,34 @@
 * tinylog
 * Logbook   
 
- 
- 
+**java.util.logging**   
+java.util.logging হল জাভার নিজস্ব প্যাকেজ। এই প্যাকেজের ভেতর কিছু ক্লাস এবং ইন্টারফেস আছে যেগুলো লগিং এর জন্য ব্যবহৃত হয়ে থাকে। নিচে এর বিস্তারিত বর্ণনা করা হলঃ              
+
+**Logger**              
+লগিং অপারেশন করার জন্য প্রথমেই লগার অবজেক্ট তৈরি করা হয়। এইটা java.util.logging.Logger প্যাকেজের অন্তর্ভুক্ত।       
+```
+import java.util.logging.Logger;
+
+// assumes the current class is called LoggerExample
+private final static Logger LOGGER = Logger.getLogger(LoggerExample.class.getName());
+```
+
+**Level**            
+
+* SEVERE (highest)
+* WARNING
+* INFO
+* CONFIG
+* FINE
+* FINER
+* FINEST
+
+**Handler**
+
+**Formatter**
+
+**Filter**
+
+**Configuration**
+
+https://examples.javacodegeeks.com/core-java/util/logging/java-util-logging-example/
