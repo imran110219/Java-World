@@ -31,21 +31,105 @@ private final static Logger LOGGER = Logger.getLogger(LoggerExample.class.getNam
 ```
 
 **Level**            
-
+লগ লেভেল মেসেজের ধরন এবং গুরুত্ব নির্দেশ করে। লেভেল ক্লাস ঠিক করে দেয় কোন ধরনের মেসেজ লগের ভেতরে লেখা হবে। লগ লেভেল লিস্টগুলো হলঃ                          
 * SEVERE (highest)
 * WARNING
 * INFO
 * CONFIG
 * FINE
 * FINER
-* FINEST
+* FINEST                     
+আরো দুইটা লগ লেভেল আছে সেগুলো হল OFF এবং ALL. OFF হলে লগ বন্ধ থাকবে আর ALL হলে সবকিছু লগ করে রাখবে।                
+```
+LOGGER.setLevel(Level.INFO);
+```
 
-**Handler**
+**Handler**  
+Handler হল জাভা লগিং ফ্রেমওয়ার্কের একটি কম্পোনেন্ট। লগ মেসেজ কোন নির্দিষ্ট জায়গায় রেখে দেয় এই কম্পোনেন্ট। লগ কনসোলে ও রাখা যায় আবার চাইলে কোন ফাইলে ও রাখা যায়। Handler একটি নির্দিষ্ট ফরম্যাটে ডাটা লগ রেকর্ডে ডাটা রাখে এবং টার্গেট ডেস্টিনেশনে পাঠিয়ে দেয়। java.util.logging প্যাকেজে সর্বমোট কয়েক ধরনের Handler আছে। সেগুলো হলঃ                     
+* ConsoleHandler: এটি System.err এ লগ মেসেজ রেকর্ড করে রাখে। এটা লগারের ডিফল্ট হ্যান্ডলার।                  
+* FileHandler: এটি কোন নির্দিষ্ট ফাইলে লগ মেসেজ রেকর্ড করে রাখে।
+* StreamHandler: এটি OutputStream এ লগ মেসেজ পাবলিশ করে থাকে।
+SocketHandler: এটি নেটওয়ার্ক stream connection এ লগ মেসেজ পাবলিশ করে থাকে।
+MemoryHandler: এটি memory buffer এ লগ মেসেজ সেভ করে থাকে।                     
+```
+public class HandlerExample {
+    private static final Logger LOGGER = Logger.getLogger(LoggerExample.class.getName());
 
-**Formatter**
+    public static void main(String[] args) {
 
-**Filter**
+        Handler consoleHandler = null;
+        Handler fileHandler = null;
+        try {
+            //Creating consoleHandler and fileHandler
+            consoleHandler = new ConsoleHandler();
+            fileHandler = new FileHandler("./util.handler.log");
 
-**Configuration**
+            //Assigning handlers to LOGGER object
+            LOGGER.addHandler(consoleHandler);
+            LOGGER.addHandler(fileHandler);
+
+            //Setting levels to handlers and LOGGER
+            consoleHandler.setLevel(Level.ALL);
+            fileHandler.setLevel(Level.ALL);
+            LOGGER.setLevel(Level.ALL);
+
+            LOGGER.config("Configuration done.");
+
+            //Console handler removed
+            LOGGER.removeHandler(consoleHandler);
+
+            LOGGER.log(Level.FINE, "Finer logged");
+        } catch (IOException exception) {
+            LOGGER.log(Level.SEVERE, "Error occur in FileHandler.", exception);
+        }
+        LOGGER.finer("Finest example on LOGGER handler completed.");
+    }
+}
+```
+
+**Formatter**            
+এই কম্পোনেন্ট লগ রেকর্ডকে নির্দিষ্ট ফরম্যাটে সেভ করে।  হ্যান্ডলার ডেস্টিনেশনে ডাটা সেভ হওয়ার আগে Formatter তাকে ফরম্যাট দেয়। Formatter দুই রকমেরঃ               
+SimpleFormatter: মেসেজ টেক্সট আকারে সেভ হয়।         
+XMLFormatter: মেসেজ এক্সএমএল আকারে সেভ হয়।                         
+```
+public class FormatterExample {
+    private static final Logger LOGGER = Logger.getLogger(LoggerExample.class.getName());
+
+    public static void main(String[] args) {
+
+        Handler fileHandler = null;
+        SimpleFormatter simpleFormatter = null;
+        try {
+            // Creating FileHandler
+            fileHandler = new FileHandler("./util.formatter.log");
+
+            // Creating SimpleFormatter
+            simpleFormatter = new SimpleFormatter();
+
+            // Assigning handler to logger
+            LOGGER.addHandler(fileHandler);
+
+            // Logging message of Level info (this should be publish in the default format i.e. XMLFormat)
+            LOGGER.info("Finnest message: Logger with DEFAULT FORMATTER");
+
+            // Setting formatter to the handler
+            fileHandler.setFormatter(simpleFormatter);
+
+            // Setting Level to ALL
+            fileHandler.setLevel(Level.ALL);
+            LOGGER.setLevel(Level.ALL);
+
+            // Logging message of Level finest (this should be publish in the simple format)
+            LOGGER.finest("Finnest message: Logger with SIMPLE FORMATTER");
+        } catch (IOException exception) {
+            LOGGER.log(Level.SEVERE, "Error occur in FileHandler.", exception);
+        }
+    }
+}
+```
+
+**Filter**               
+
+**Configuration**            
 
 https://examples.javacodegeeks.com/core-java/util/logging/java-util-logging-example/

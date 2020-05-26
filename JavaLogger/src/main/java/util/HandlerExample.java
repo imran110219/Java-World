@@ -5,14 +5,15 @@ import java.util.logging.*;
 
 public class HandlerExample {
     private static final Logger LOGGER = Logger.getLogger(LoggerExample.class.getName());
+
     public static void main(String[] args) {
 
         Handler consoleHandler = null;
-        Handler fileHandler  = null;
-        try{
+        Handler fileHandler = null;
+        try {
             //Creating consoleHandler and fileHandler
             consoleHandler = new ConsoleHandler();
-            fileHandler  = new FileHandler("./util.log");
+            fileHandler = new FileHandler("./util.handler.log");
 
             //Assigning handlers to LOGGER object
             LOGGER.addHandler(consoleHandler);
@@ -29,11 +30,9 @@ public class HandlerExample {
             LOGGER.removeHandler(consoleHandler);
 
             LOGGER.log(Level.FINE, "Finer logged");
-        }catch(IOException exception){
+        } catch (IOException exception) {
             LOGGER.log(Level.SEVERE, "Error occur in FileHandler.", exception);
         }
-
         LOGGER.finer("Finest example on LOGGER handler completed.");
-
     }
 }

@@ -6,11 +6,12 @@ import java.util.logging.*;
 
 public class FormatterExample {
     private static final Logger LOGGER = Logger.getLogger(LoggerExample.class.getName());
+
     public static void main(String[] args) {
 
         Handler fileHandler = null;
         SimpleFormatter simpleFormatter = null;
-        try{
+        try {
             // Creating FileHandler
             fileHandler = new FileHandler("./util.formatter.log");
 
@@ -32,7 +33,7 @@ public class FormatterExample {
 
             // Logging message of Level finest (this should be publish in the simple format)
             LOGGER.finest("Finnest message: Logger with SIMPLE FORMATTER");
-        }catch(IOException exception){
+        } catch (IOException exception) {
             LOGGER.log(Level.SEVERE, "Error occur in FileHandler.", exception);
         }
     }

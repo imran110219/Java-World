@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2020-05-20T17:23:34</date>
-  <millis>1589973814005</millis>
+  <date>2020-05-26T17:56:44</date>
+  <millis>1590494204389</millis>
   <sequence>0</sequence>
   <logger>util.LoggerExample</logger>
   <level>CONFIG</level>
@@ -13,8 +13,8 @@
   <message>Configuration done.</message>
 </record>
 <record>
-  <date>2020-05-20T17:23:34</date>
-  <millis>1589973814046</millis>
+  <date>2020-05-26T17:56:44</date>
+  <millis>1590494204434</millis>
   <sequence>1</sequence>
   <logger>util.LoggerExample</logger>
   <level>FINE</level>
@@ -24,8 +24,8 @@
   <message>Finer logged</message>
 </record>
 <record>
-  <date>2020-05-20T17:23:34</date>
-  <millis>1589973814046</millis>
+  <date>2020-05-26T17:56:44</date>
+  <millis>1590494204435</millis>
   <sequence>2</sequence>
   <logger>util.LoggerExample</logger>
   <level>FINER</level>
