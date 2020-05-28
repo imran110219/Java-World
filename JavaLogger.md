@@ -128,7 +128,36 @@ public class FormatterExample {
 }
 ```
 
-**Filter**               
+**Filter**          
+Filter হল java.util.logging প্যাকেজের একটা ইন্টারফেস। এটা হ্যান্ডলা্রের মেসেজ কন্ট্রোল করে। লগার আর হ্যান্ডলার Filter ব্যবহার করতে পারে। Filter এর isLoggable মেথড থাকে যেটা boolean রিটার্ন করে। মেসেজ পাবলিশ করার আগে Logger/Handler isLoggable মেথডটি কল করে, যদি true রিটার্ন করে তাহলে মেসেজ পাবলিশ হয় অন্যথায় পাবলিশ করা থেকে বিরত থাকে।      
+
+```
+public class FilterExample implements Filter {
+    private static final Logger LOGGER = Logger.getLogger(LoggerExample.class.getName());
+    public static void main(String[] args) {
+        //Setting filter FilterExample
+        LOGGER.setFilter(new FilterExample());
+        //Since this message string does not contain the word important. Despite of being the Level SEVERE this will be ignored
+        LOGGER.severe("This is SEVERE message");
+        //This will get published
+        LOGGER.warning("This is important warning message");
+    }
+
+    // This method will return true only if the LogRecord object contains the message which contains the word important
+    @Override
+    public boolean isLoggable(LogRecord record) {
+        if(record == null)
+            return false;
+
+        String message = record.getMessage()==null?"":record.getMessage();
+
+        if(message.contains("important"))
+            return true;
+
+        return false;
+    }
+}
+```     
 
 **Configuration**            
 
