@@ -11,7 +11,7 @@ public class ConfigurationExample {
     private static final Logger LOGGER = Logger.getLogger("confLogger");
     static{
         try {
-            logManager.readConfiguration(new FileInputStream("./util.properties"));
+            logManager.readConfiguration(new FileInputStream("./src/main/resources/util.configuration.properties"));
         } catch (IOException exception) {
             LOGGER.log(Level.SEVERE, "Error in loading configuration",exception);
         }

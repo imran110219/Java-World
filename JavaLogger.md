@@ -160,5 +160,22 @@ public class FilterExample implements Filter {
 ```     
 
 **Configuration**            
+লগার অবজেক্টে কনফিগারেশন প্রোপার্টিজ লিখে দেওয়া যায়। লগার অবজেক্ট কনফিগারেশন ফাইল ব্যবহার করে। ডিফল্ট কনফিগারেশন রিমুভ করে একে সুবিধামত কনফিগার করা যায়। LogManager এই সুবিধা দিয়ে থাকে।          
 
-https://examples.javacodegeeks.com/core-java/util/logging/java-util-logging-example/
+```
+public class ConfigurationExample {
+    private static final LogManager logManager = LogManager.getLogManager();
+    private static final Logger LOGGER = Logger.getLogger("confLogger");
+    static{
+        try {
+            logManager.readConfiguration(new FileInputStream("./src/main/resources/util.configuration.properties"));
+        } catch (IOException exception) {
+            LOGGER.log(Level.SEVERE, "Error in loading configuration",exception);
+        }
+    }
+    public static void main(String[] args) {
+        LOGGER.fine("Fine message logged");
+    }
+}
+```
+
