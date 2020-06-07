@@ -8,3 +8,16 @@
 
 <img src="Images/Template Engine.png" />
 
+**JSP and JSTL**
+The Cognito demonstration application was developed to explore the AWS Cognito authentication service. The application includes ten web pages, where almost every page includes dynamic server side data.
+
+The original version of the Cognito demonstration application uses JSP and JSTL templates in the web pages.
+
+JSTL supports the <c:import … > tag which allows HTML fragements to be included in the page or page header.
+
+The example below shows how conditional logic can be added for server side page generation. When a page is sent to the client, it will consists of static HTML, which has been dynamically generated on the server.
+
+
+
+
+https://hackernoon.com/java-template-engines-ef84cb1025a4
