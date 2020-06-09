@@ -9,14 +9,38 @@
 <img src="Images/Template Engine.png" />
 
 **JSP and JSTL**                                   
-The Cognito demonstration application was developed to explore the AWS Cognito authentication service. The application includes ten web pages, where almost every page includes dynamic server side data.
+JSP হল Java Server Pages এমন একটি টেকনোলজি যার দ্বারা এইচটিএমএল পেজে jsp ট্যাগ ব্যবহার করে জাভা কোড লেখা যায়।              
+```
+<%@ page language="java" contentType="text/html; charset=US-ASCII"
+    pageEncoding="US-ASCII"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+		<title>First JSP</title>
+	</head>
+	<%@ page import="java.util.Date" %>
+	<body>
+		<h3>Hi Pankaj</h3><br>
+		<strong>Current Time is</strong>: <%=new Date() %>
+	</body>
+</html>
+```
 
-The original version of the Cognito demonstration application uses JSP and JSTL templates in the web pages.
-
-JSTL supports the <c:import … > tag which allows HTML fragements to be included in the page or page header.
-
-The example below shows how conditional logic can be added for server side page generation. When a page is sent to the client, it will consists of static HTML, which has been dynamically generated on the server.
-
+JSTL হল JSP Standard Tag Library যেটা কিছু ট্যাগের সমষ্টি যা jsp এর ভেতরে ব্যবহার করা হয়।                      
+```
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+  <head>
+    <title>Tag Example</title>
+  </head>
+  <body>
+    <c:if test="${param.name == 'studytonight'}">
+      <p>Welcome to ${param.name} </p>
+    </c:if>
+  </body>
+</html>
+```
 
 
 
