@@ -8,7 +8,7 @@
 
 <img src="Images/Template Engine.png" />
 
-**JSP and JSTL**
+**JSP and JSTL**                                   
 The Cognito demonstration application was developed to explore the AWS Cognito authentication service. The application includes ten web pages, where almost every page includes dynamic server side data.
 
 The original version of the Cognito demonstration application uses JSP and JSTL templates in the web pages.
