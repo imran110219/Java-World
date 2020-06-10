@@ -42,8 +42,18 @@ JSTL হল JSP Standard Tag Library যেটা কিছু ট্যাগ�
 </html>
 ```
 
-**Thymeleaf**
+**Thymeleaf**                  
+Thymeleaf বর্তমানে স্প্রিং কমিউনিটিতে বেশ জনপ্রিয়।                        
+```
+<tbody>
+    <tr th:each="student: ${students}">
+        <td th:text="${student.id}" />
+        <td th:text="${student.name}" />
+    </tr>
+</tbody>
+```
 
-**FreeMarker**
+**FreeMarker**               
+FreeMarker হল Apache Software Foundation
 
 https://hackernoon.com/java-template-engines-ef84cb1025a4
