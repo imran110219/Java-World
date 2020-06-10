@@ -42,6 +42,8 @@ JSTL হল JSP Standard Tag Library যেটা কিছু ট্যাগ�
 </html>
 ```
 
+**Thymeleaf**
 
+**FreeMarker**
 
 https://hackernoon.com/java-template-engines-ef84cb1025a4
