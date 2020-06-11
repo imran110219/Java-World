@@ -47,7 +47,7 @@
 * Iterator Pattern         
 * Mediator Pattern         
 * Memento Pattern           
-* Observer Pattern     
+* [অবজারভার প্যাটার্ন (Observer Pattern)](ObserverPattern.md)     
 * State Pattern         
 * Strategy Pattern           
 * Template Pattern      
