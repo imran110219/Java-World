@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../AbstractFactoryPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactoryPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
       <recent name="H:\Code Factory\Java\Java-World\DesignPattern\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAbstractFactory">
+  <component name="RunManager" selected="Application.TestObserver">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -373,6 +373,7 @@
       <workItem from="1588590972196" duration="2261000" />
       <workItem from="1589089113863" duration="658000" />
       <workItem from="1589189280306" duration="8543000" />
+      <workItem from="1591843535466" duration="1915000" />
     </task>
     <servers />
   </component>
