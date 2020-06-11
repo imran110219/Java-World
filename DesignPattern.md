@@ -48,8 +48,8 @@
 * Mediator Pattern         
 * Memento Pattern           
 * [অবজারভার প্যাটার্ন (Observer Pattern)](ObserverPattern.md)     
-* State Pattern         
-* Strategy Pattern           
+* [স্টেট  প্যাটার্ন (State Pattern)](StatePattern.md)         
+* [স্ট্রাটেজি প্যাটার্ন (Strategy Pattern)](StrategyPattern.md)           
 * Template Pattern      
 * Visitor Pattern          
 * Null Object         
