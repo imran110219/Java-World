@@ -1,4 +1,4 @@
-# অবজারভার প্যাটার্ন (Observer Pattern)   
+# স্টেট প্যাটার্ন (State Pattern)                   
 
 **উদাহরন**                    
 

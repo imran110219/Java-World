@@ -1,4 +1,4 @@
-# অবজারভার প্যাটার্ন (Observer Pattern)   
+# স্ট্রাটেজি প্যাটার্ন (Strategy Pattern)                      
 
 **উদাহরন**                    
 

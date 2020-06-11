@@ -1,4 +1,4 @@
-# অবজারভার প্যাটার্ন (Observer Pattern)   
+# ব্রিজ প্যাটার্ন(Bridge Pattern)   
 
 **উদাহরন**                    
 

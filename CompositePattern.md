@@ -1,4 +1,4 @@
-# অবজারভার প্যাটার্ন (Observer Pattern)   
+# কম্পজিট প্যাটার্ন (Composite Pattern)   
 
 **উদাহরন**                    
 

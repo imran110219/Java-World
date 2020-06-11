@@ -1,4 +1,4 @@
-# অবজারভার প্যাটার্ন (Observer Pattern)   
+# ডেকোরেটর প্যাটার্ন (Decorator Pattern)   
 
 **উদাহরন**                    
 
