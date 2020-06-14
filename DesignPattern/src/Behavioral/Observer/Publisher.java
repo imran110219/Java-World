@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Sadman on 3/2/2020.
  */
-public class MessagePublisher implements Subject {
+public class Publisher implements Subject {
 
     private List<Observer> observers = new ArrayList<>();
 

@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Behavioral/Observer/MessagePublisher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Behavioral/Observer/TestObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Behavioral/Observer/TestObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Behavioral/Observer/MessagePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Behavioral/Observer/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Behavioral/Observer/TestObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Behavioral/Observer/TestObserver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,6 +378,7 @@
       <workItem from="1589089113863" duration="658000" />
       <workItem from="1589189280306" duration="8543000" />
       <workItem from="1591843535466" duration="5050000" />
+      <workItem from="1592149619193" duration="907000" />
     </task>
     <servers />
   </component>

@@ -10,7 +10,7 @@ public class TestObserver {
         MessageSubscriberTwo s2 = new MessageSubscriberTwo();
         MessageSubscriberThree s3 = new MessageSubscriberThree();
 
-        MessagePublisher p = new MessagePublisher();
+        Publisher p = new Publisher();
 
         p.attach(s1);
         p.attach(s2);
