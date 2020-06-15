@@ -6,9 +6,9 @@ package Behavioral.Observer;
 public class TestObserver {
     public static void main(String[] args)
     {
-        MessageSubscriberOne s1 = new MessageSubscriberOne();
-        MessageSubscriberTwo s2 = new MessageSubscriberTwo();
-        MessageSubscriberThree s3 = new MessageSubscriberThree();
+        SubscriberOne s1 = new SubscriberOne();
+        SubscriberTwo s2 = new SubscriberTwo();
+        SubscriberThree s3 = new SubscriberThree();
 
         Publisher p = new Publisher();
 

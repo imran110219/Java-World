@@ -12,6 +12,77 @@
 এটার সমাধান হল আমাদের প্রথমে দুইটা ইন্টারফেস বানাতে হবে। একটা হল Subject এইটার কাজ হল মেসেজ নোটিফিকেশন পাঠানো এবং Publisher ক্লাস তৈরি করতে হবে Subject ইন্টারফেসকে implement করে। আরেকটা ইন্টারফেস হল Observer/Subscriber যেটা implement করে আমরা যত ইচ্ছা Subscriber বানাতে পারি। এই ক্ষেত্রে আমাদেরকে ডিজাইন করতে হবে ইউটিউব সাবস্ক্রিপশনের মত। একজন ইউজার ইচ্ছা অনুযায়ী তার চ্যানেলগুলোতে সাবস্ক্রাইব করতে পারবে এবং সেই চ্যানেলের আপডেট ইউজার পাবে।                    
 
 **ইমপ্লিমেন্টেশন**                
+```
+public class Message {
 
+    final String messageContent;
+
+    public Message (String m) {
+        this.messageContent = m;
+    }
+
+    public String getMessageContent() {
+        return messageContent;
+    }
+}
+```
+
+```
+public interface Subject {
+    public void attach(Observer o);
+    public void detach(Observer o);
+    public void notifyUpdate(Message m);
+}
+```
+
+```
+public class Publisher implements Subject {
+
+    private List<Observer> observers = new ArrayList<>();
+
+    @Override
+    public void attach(Observer o) {
+        observers.add(o);
+    }
+
+    @Override
+    public void detach(Observer o) {
+        observers.remove(o);
+    }
+
+    @Override
+    public void notifyUpdate(Message m) {
+        for(Observer o: observers) {
+            o.update(m);
+        }
+    }
+}
+```
+
+```
+public interface Observer {
+    public void update(Message m);
+}
+```
+
+```
+public class SubscriberOne implements Observer {
+    @Override
+    public void update(Message m) {
+        System.out.println("MessageSubscriberOne :: " + m.getMessageContent());
+    }
+}
+```
+
+```
+public class SubscriberTwo implements Observer {
+    @Override
+    public void update(Message m) {
+        System.out.println("MessageSubscriberTwo :: " + m.getMessageContent());
+    }
+}
+```
 
 **সুবিধা - অসুবিধা**              
+* এটা Open/Closed Principle মেনে চলে।                
+* Subscriber নোটিফিকেশন পায় random ভাবে।      
