@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Behavioral/Observer/MessageSubscriberOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Behavioral/Observer/MessageSubscriberThree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Behavioral/Observer/MessageSubscriberTwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/Behavioral/Observer/TestObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/Behavioral/Observer/TestObserver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Behavioral/Observer/MessageSubscriberOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Behavioral/Observer/SubscriberOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Behavioral/Observer/MessageSubscriberThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Behavioral/Observer/SubscriberThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Behavioral/Observer/MessageSubscriberTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Behavioral/Observer/SubscriberTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Behavioral/Observer/TestObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Behavioral/Observer/TestObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ObserverPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +49,7 @@
       <recent name="H:\Code Factory\Java\Java-World\DesignPattern\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestObserver">
+  <component name="RunManager" selected="Application.TestState">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -384,7 +375,8 @@
       <workItem from="1589189280306" duration="8543000" />
       <workItem from="1591843535466" duration="5050000" />
       <workItem from="1592149619193" duration="1725000" />
-      <workItem from="1592209354441" duration="235000" />
+      <workItem from="1592209354441" duration="1573000" />
+      <workItem from="1592292689818" duration="4116000" />
     </task>
     <servers />
   </component>
@@ -408,22 +400,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587035806439" />
-    <state width="1323" height="225" key="GridCell.Tab.0.bottom" timestamp="1592157567461">
+    <state width="1323" height="225" key="GridCell.Tab.0.bottom" timestamp="1592314047985">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="225" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592157567461" />
-    <state width="1323" height="225" key="GridCell.Tab.0.center" timestamp="1592157567461">
+    <state width="1323" height="225" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592314047985" />
+    <state width="1323" height="225" key="GridCell.Tab.0.center" timestamp="1592314047985">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="225" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592157567461" />
-    <state width="1323" height="225" key="GridCell.Tab.0.left" timestamp="1592157567461">
+    <state width="1323" height="225" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592314047985" />
+    <state width="1323" height="225" key="GridCell.Tab.0.left" timestamp="1592314047985">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="225" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592157567461" />
-    <state width="1323" height="225" key="GridCell.Tab.0.right" timestamp="1592157567461">
+    <state width="1323" height="225" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592314047985" />
+    <state width="1323" height="225" key="GridCell.Tab.0.right" timestamp="1592314047985">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="225" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592157567461" />
+    <state width="1323" height="225" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592314047985" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586936291518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
