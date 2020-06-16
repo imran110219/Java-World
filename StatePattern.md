@@ -1,4 +1,5 @@
 # স্টেট প্যাটার্ন (State Pattern)                  
+স্টেট প্যাটার্ন হল বিহ্যাভিওরাল ডিজাইন প্যাটার্ন যেটা একটা অবজেক্টের স্বভাব পরিবর্তন করে দেয় তার স্টেট পরিবর্তনের সাথে সাথে। এক কথায় অবজেক্ট তার নিজের ক্লাস পরিবর্তন করবে। 
 State is a behavioral design pattern that lets an object alter its behavior when its internal state changes. It appears as if the object changed its class. 
 
 **উদাহরন**                    
