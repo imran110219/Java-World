@@ -3,7 +3,7 @@ package Behavioral.State;
 /**
  * Created by Imran on 3/5/2020.
  */
-public class InTransition implements PackageState
+public class InTransition implements State
 {
     //Singleton
     private static InTransition instance = new InTransition();

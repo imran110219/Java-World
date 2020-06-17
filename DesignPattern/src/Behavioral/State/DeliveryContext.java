@@ -4,10 +4,10 @@ package Behavioral.State;
  * Created by Imran on 3/5/2020.
  */
 public class DeliveryContext {
-    private PackageState currentState;
+    private State currentState;
     private String packageId;
 
-    public DeliveryContext(PackageState currentState, String packageId)
+    public DeliveryContext(State currentState, String packageId)
     {
         super();
         this.currentState = currentState;
@@ -18,11 +18,11 @@ public class DeliveryContext {
         }
     }
 
-    public PackageState getCurrentState() {
+    public State getCurrentState() {
         return currentState;
     }
 
-    public void setCurrentState(PackageState currentState) {
+    public void setCurrentState(State currentState) {
         this.currentState = currentState;
     }
 
