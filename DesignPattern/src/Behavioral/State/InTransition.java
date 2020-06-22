@@ -16,7 +16,7 @@ public class InTransition implements State
 
     //Business logic and state transition
     @Override
-    public void updateState(DeliveryContext ctx)
+    public void updateState(Context ctx)
     {
         System.out.println("Package is in transition !!");
         ctx.setCurrentState(OutForDelivery.instance());

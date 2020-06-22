@@ -3,11 +3,11 @@ package Behavioral.State;
 /**
  * Created by Imran on 3/5/2020.
  */
-public class DeliveryContext {
+public class Context {
     private State currentState;
     private String packageId;
 
-    public DeliveryContext(State currentState, String packageId)
+    public Context(State currentState, String packageId)
     {
         super();
         this.currentState = currentState;

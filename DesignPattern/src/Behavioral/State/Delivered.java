@@ -16,7 +16,7 @@ public class Delivered implements State
 
     //Business logic
     @Override
-    public void updateState(DeliveryContext ctx)
+    public void updateState(Context ctx)
     {
         System.out.println("Package is delivered!!");
     }

@@ -6,7 +6,7 @@ package Behavioral.State;
 public class TestState {
     public static void main(String[] args)
     {
-        DeliveryContext ctx = new DeliveryContext(null, "Test123");
+        Context ctx = new Context(null, "Test123");
 
         ctx.update();
         ctx.update();
