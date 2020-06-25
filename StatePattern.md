@@ -165,3 +165,5 @@ public class DeliveryContext {
 ```
 
 **সুবিধা - অসুবিধা**             
+* এটা Single Responsibility Principle মেনে চলে।            
+* 
