@@ -50,7 +50,7 @@
       <recent name="H:\Code Factory\Java\Java-World\DesignPattern\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestState">
+  <component name="RunManager" selected="Application.TestStrategy">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -382,7 +382,8 @@
       <workItem from="1592382387104" duration="766000" />
       <workItem from="1592387566577" duration="3606000" />
       <workItem from="1592812860382" duration="2664000" />
-      <workItem from="1593146715022" duration="861000" />
+      <workItem from="1593146715022" duration="1521000" />
+      <workItem from="1593238298645" duration="2424000" />
     </task>
     <servers />
   </component>
