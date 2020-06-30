@@ -80,7 +80,7 @@ public class SocketAdapterImpl implements SocketAdapter{
 public class TestAdapter {
     public static void main(String[] args) {
 
-        SocketAdapter sockAdapter = new SocketObjectAdapterImpl();
+        SocketAdapter sockAdapter = new SocketAdapterImpl();
         Volt v3 = getVolt(sockAdapter,3);
         Volt v12 = getVolt(sockAdapter,12);
         Volt v120 = getVolt(sockAdapter,120);
@@ -101,3 +101,4 @@ public class TestAdapter {
 ```
 
 **সুবিধা - অসুবিধা**              
+১. এটা সিঙ্গেল রেস্পন্সিবিলিটি প্রিন্সিপাল এবং ওপেন ক্লোজ প্রিন্সিপাল অনুযায়ী ডিজাইন করা।
