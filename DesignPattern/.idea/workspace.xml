@@ -50,7 +50,7 @@
       <recent name="H:\Code Factory\Java\Java-World\DesignPattern\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAdapter">
+  <component name="RunManager" selected="Application.TestDecorator">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -385,7 +385,7 @@
       <workItem from="1593146715022" duration="1521000" />
       <workItem from="1593238298645" duration="3201000" />
       <workItem from="1593410413592" duration="4077000" />
-      <workItem from="1593494323174" duration="2234000" />
+      <workItem from="1593494323174" duration="5288000" />
     </task>
     <servers />
   </component>
@@ -409,22 +409,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593248620802" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1593452709109">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1593536579364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593452709109" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1593452709108">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593536579364" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1593536579363">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593452709108" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1593452709108">
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593536579363" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1593536579363">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593452709108" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1593452709109">
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593536579363" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1593536579363">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593452709109" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593536579363" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1592813021020">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
