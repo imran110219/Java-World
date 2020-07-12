@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="" />
+    <list default="true" id="84962499-31ee-40df-8a8c-d330b670c29e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java-Web/springbootsecurity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DependencyInjection" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -48,7 +50,7 @@
       <recent name="H:\Code Factory\Java\Java-World\DesignPattern\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDecorator">
+  <component name="RunManager" selected="Application.TestAbstractFactory">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -385,6 +387,7 @@
       <workItem from="1593410413592" duration="4077000" />
       <workItem from="1593494323174" duration="5288000" />
       <workItem from="1593668540738" duration="3065000" />
+      <workItem from="1594529683253" duration="1523000" />
     </task>
     <servers />
   </component>
@@ -404,26 +407,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="427" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1589190416886" />
-    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1593677722508">
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1594532924743">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593677722508" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1593536579364">
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594532924743" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1594536461113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593536579364" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1593536579363">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594536461113" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1594536461113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593536579363" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1593536579363">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594536461113" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1594536461113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593536579363" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1593536579363">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594536461113" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1594536461113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593536579363" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594536461113" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1592813021020">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
