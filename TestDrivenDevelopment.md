@@ -23,4 +23,14 @@
 উদাহরনঃ
 
 
+Children upto 9 years of age
+
+Adolescents 10-19 years
+
+Adults 20-45 years
+
+Middle age 46-60 years
+
+Old > 60
+
 
