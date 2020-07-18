@@ -1,7 +1,7 @@
 # জাভা মাল্টিথ্রেডিং বিষয়বস্তু
 
-### ১. মাল্টিথ্রেডিং উদাহরণ    
-Java is a multi-threaded programming language which means we can develop multi-threaded program using Java. A multi-threaded program contains two or more parts that can run concurrently and each part can handle a different task at the same time making optimal use of the available resources specially when your computer has multiple CPUs.
+### ১. মাল্টিথ্রেডিং উদাহরন     
+যখন একাধিক থ্রেড পাশাপাশি চলতে থাকে তখন তাকে মাল্টিথ্রেডিং বলে। 
 
 ১. এখানে থ্রেড ক্লাস এক্সটেন্ড করে মাল্টিথ্রেডিং ডিজাইন করা হয়েছে। 
 
