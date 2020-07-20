@@ -22,10 +22,10 @@
 
 উদাহরনঃ      
 ধরা যাক, আমাদের একটা প্রোগ্রাম ডিজাইন করতে হবে যেখানে মানুষের বয়স ইনপুট দিলে সে কি বাচ্চা, মধ্যবয়সী, বৃদ্ধ সেটা আউটপুট দেখাবে। আমাদের হাতে অনেকগুলো টেস্ট কেস আছে সেগুলো এক এক করে আমরা যোগ করে প্রোগ্রাম লিখবো।     
-টেস্ট কেস গুলো হলঃ      
+টেস্ট কেস গুলো হলঃ         
 | Input | Output |
 | --- | --- |
-| 0 | Children |
+| 1 | Children |
 | 9 | Children |
 | 10 | Adolescents |
 | 19 | Adolescents |
@@ -34,7 +34,75 @@
 | 46 | Middle age |
 | 60 | Middle age |
 
+আমরা প্রথমে দুইটা টেস্ট কেস বিবেচনা করব। আমাদের এই মেথড ইনপুট হিসেবে নিবে integer আর string আউটপুট দিবে। আমরা একটা খালি ফাংশন লিখব।              
+```
+public String checkState(int age){
+	return "";
+}
+```
 
+এবার আমরা প্রথম দুইটা ইনপুট পাস করে এমন কোড লিখব। অর্থাৎ আমাদের কোডে যেন 1 ইনপুট দিলে যেন Children আউটপুট দেয় এবং  9 ইনপুট দিলে যেন Children আউটপুট দেয়। তাহলে আমাদের কোডটা হবে এমন।          
+```
+public String checkState(int age){
+	if(age == 1)
+		return "Children";
+	else if(age == 9)
+		return "Children";
+	return "Invalid Input";
+}
+```
+
+*Unit Test*
+```
+public class TestCheckState {
+    private final Checker checker = new Checker();
+    @Test
+    public void testCheckState() {
+        assertEquals("Children",checker.checkState(1));
+        assertEquals("Children",checker.checkState(9));
+    }
+}
+```
+
+এবার আমাদের কোডটা refactor করতে হবে। Duplicate কোড রিমুভ করতে হবে। আমাদের কোডে যদি কেউ  2 ইনপুট দেয় তাহলে আমাদের আবার সেম কোড লিখতে হবে। সুতরাং আমাদের ইনপুট ১ থেকে ৯ হলে Children আউটপুট দেখাতে হবে। তাহলে আমাদের কোড হবে এমন            
+```
+public String checkState(int age){
+	if(age > 0 &&  age < 10)
+		return "Children";
+	return "Invalid Input";
+}
+```
+এবার আমাদের আবার ইউনিট টেস্ট করতে হবে যদি আউটপুট ঠিকঠাক আসে তাহলে আমরা আবার প্রথম ধাপে ফিরে যাব অর্থাৎ নতুন দুইটা টেস্ট কেস দিয়ে শুরু করতে হবে।       
+```
+@Test
+public void testCheckState() {
+	assertEquals("Adolescents",checker.checkState(10));
+	assertEquals("Adolescents",checker.checkState(19));
+}
+```
+
+উপরোক্ত কোডে আমরা দেখতে পাচ্ছি দুইটা টেস্ট কেসই ফেল করছে। এই টেস্ট কেস পাস করার কোড লিখতে হবে আমাদের।         
+```
+public String checkState(int age){
+	if(age > 0 &&  age < 10)
+		return "Children";
+	else if(age == 10)
+		return "Adolescents";
+	else if(age == 19)
+		return "Adolescents";
+	return "Invalid Input";
+}
+```
+
+```
+@Test
+public void testCheckState() {
+	assertEquals("Adolescents",checker.checkState(10));
+	assertEquals("Adolescents",checker.checkState(19));
+}
+```
+
+আমাদের কোডটা ঠিকমত কাজ করছে। এরপর আবার কোডটা refactor করতে হবে।
 
 Children upto 9 years of age
 
