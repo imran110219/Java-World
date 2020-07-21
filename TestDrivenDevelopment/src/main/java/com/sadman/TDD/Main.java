@@ -7,5 +7,9 @@ public class Main {
         System.out.println(checker.checkState(1));
         System.out.println(checker.checkState(5));
         System.out.println(checker.checkState(9));
+        System.out.println(checker.checkState(10));
+        System.out.println(checker.checkState(11));
+        System.out.println(checker.checkState(15));
+        System.out.println(checker.checkState(19));
     }
 }
