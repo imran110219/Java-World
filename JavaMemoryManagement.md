@@ -21,6 +21,11 @@ StringBuilder builder = new StringBuilder();
 সবচেয়ে প্রচলিত রেফারেন্স টাইপ হল এইটা। উপরের উদাহরনে  StringBuilder আছে এইটা হল স্ট্রং রেফারেন্স। এই অবজেক্ট গারবেজ হিসেবে যায় না যতক্ষন পর্যন্ত এইটার উপর স্ট্রং রেফারেন্স পয়েন্ট করে থাকে।       
 
 **২. উইক রেফারেন্স (Weak Reference)**      
+উইক রেফারেন্স যখন হিপে থাকা অবজেক্টের উপর পয়েন্ট করা থাকে তাহলে নেক্সট গারবেজ কালেকশান প্রসেসে সেটা ডিলিট হয়ে যায়।       
+```
+WeakReference<StringBuilder> reference = new WeakReference<>(new StringBuilder());
+```
+
 
 **৩. সফট রেফারেন্স (Soft Reference)**      
 
