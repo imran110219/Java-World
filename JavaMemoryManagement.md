@@ -26,8 +26,8 @@ StringBuilder builder = new StringBuilder();
 WeakReference<StringBuilder> reference = new WeakReference<>(new StringBuilder());
 ```
 
-
 **৩. সফট রেফারেন্স (Soft Reference)**      
+
 
 **৪. ফ্যান্টম রেফারেন্স (Phantom Reference)**       
  

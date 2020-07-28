@@ -12,6 +12,10 @@ public class Parent {
         this.weight = weight;
     }
 
+    public Parent(){
+
+    }
+
     public void eating() {
         System.out.println(getClass().getSimpleName() + " is eating.");
     }

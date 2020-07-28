@@ -6,6 +6,7 @@ package inheritance;
 public class TestInheritance {
     public static void main(String[] args){
         Parent parent = new Parent(50, 80);
+        Parent parent1 = new Parent();
         System.out.println(parent.toString());
         parent.eating();
 
