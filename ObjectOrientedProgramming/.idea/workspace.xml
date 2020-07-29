@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f0eb17d-2fb9-4b6e-aaca-2beed0daab95" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../JavaMemoryManagement.md" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMemoryManagement.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/Parent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/TestInheritance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/TestInheritance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SOLID.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SOLID.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1376" />
-    <option name="height" value="744" />
   </component>
   <component name="ProjectId" id="1fIePJJURxj4URcoB8P4qQ7jSfI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -286,12 +277,30 @@
       <workItem from="1582623344513" duration="772000" />
       <workItem from="1583046956576" duration="641000" />
       <workItem from="1583910481972" duration="1412000" />
-      <workItem from="1595910011427" duration="1576000" />
+      <workItem from="1595910011427" duration="2328000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1595954442973">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595954442973" />
+    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1595954442973">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595954442973" />
+    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1595954442972">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595954442972" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1595954442973">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595954442973" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
