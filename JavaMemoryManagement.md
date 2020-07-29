@@ -27,9 +27,15 @@ WeakReference<StringBuilder> reference = new WeakReference<>(new StringBuilder()
 ```
 
 **৩. সফট রেফারেন্স (Soft Reference)**      
+এই ধরনের রেফারেন্স ব্যবহার করা মেমোরি সেনসিটিভ ক্ষেত্রে, যখন অ্যাপ্লিকেশান মেমোরি স্পেস কমে যায় তখন এর গারবেজ কালেক্ট হয়। এইটা কিছু উইক রেফারেন্সের মতই। কিন্তু পার্থক্য হছে এই রেফারেন্সের অবজেক্ট গুলো তখনই গারবেজ হিসেবে কালেক্ট হয় যখন ক্রিটিকালি আমাদের মেমোরি ফাকা করার দরকার পড়ে। যখন জাভা প্রোগ্রাম OutOfMemoryError দেয় তার আগে সকল সফট রেফারেন্স অবজেক্ট ক্লিয়ার হয়ে যায়।     
+```
+SoftReference<StringBuilder> reference = new SoftReference<>(new StringBuilder());
+```
 
+**৪. ফ্যান্টম রেফারেন্স (Phantom Reference)**    
 
-**৪. ফ্যান্টম রেফারেন্স (Phantom Reference)**       
+**গারবেজ কালেকশান যেভাবে কাজ করে**       
+   
  
 
 
