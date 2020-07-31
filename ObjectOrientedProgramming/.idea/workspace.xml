@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f0eb17d-2fb9-4b6e-aaca-2beed0daab95" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SOLID.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SOLID.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,6 +277,8 @@
       <workItem from="1583046956576" duration="641000" />
       <workItem from="1583910481972" duration="1412000" />
       <workItem from="1595910011427" duration="2328000" />
+      <workItem from="1596036436435" duration="600000" />
+      <workItem from="1596171303874" duration="392000" />
     </task>
     <servers />
   </component>
@@ -285,6 +286,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1596171413992">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596171413992" />
     <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1595954442973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -301,6 +306,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595954442973" />
+    <state x="65" y="24" key="new project wizard" timestamp="1596171422802">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="24" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1596171422802" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

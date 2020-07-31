@@ -35,6 +35,7 @@ SoftReference<StringBuilder> reference = new SoftReference<>(new StringBuilder()
 **৪. ফ্যান্টম রেফারেন্স (Phantom Reference)**    
 
 **গারবেজ কালেকশান যেভাবে কাজ করে**       
+As discussed earlier, depending on the type of reference that a variable from the stack holds to an object from the heap, at a certain point in time, that object becomes eligible for the garbage collector.
    
  
 
