@@ -43,9 +43,11 @@ SoftReference<StringBuilder> reference = new SoftReference<>(new StringBuilder()
 
 যদি ও জাভা নিজেই ঠিক করে নেয় কখন গারবেজ কালেক্টর রান করবে কিন্তু তারপর ও System.gc() আমরা ম্যানুয়ালি কল করতে পারি। কিন্তু ম্যানুয়ালি System.gc() কল করা সাজেস্ট করা হয় না।     
 
-জাভা গারবেজ কালেকশানের প্রকারভেদঃ     
-1. Serial GC      
-2. Parallel GC    
+জাভা গারবেজ কালেক্টরের প্রকারভেদঃ     
+**1. Serial GC** 
+সিঙ্গেল থ্রেড কালেক্টর। ছোট অ্যাপ্লিকেশন ছোট ডেটার ক্ষেত্রে ব্যবহৃত হয়।          
+**2. Parallel GC**     
+গারবেজ কালেক্টর এই ক্ষেত্রে এক সাথে অনেকগুলো থ্রেডের মাধ্যমে রান হয়।     
 3. Mostly concurrent GC  
 3.1 Garbage First    
 3.2 Concurrent Mark Sweep   
