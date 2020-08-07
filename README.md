@@ -12,4 +12,4 @@
 * [ডিপেন্ডেন্সি ইনজেকশন](DependencyInjection.md)
 * [টেস্ট ড্রাইভেন ডেভেলপমেন্ট](TestDrivenDevelopment.md)
 * [জাভা মেমোরি ম্যানেজমেন্ট ](JavaMemoryManagement.md)
-* [সফটওয়ার ডেভেলপমেন্ট লাইফ সাইকেল](SDLC.md)
+* [সফটওয়্যার ডেভেলপমেন্ট লাইফ সাইকেল](SDLC.md)
