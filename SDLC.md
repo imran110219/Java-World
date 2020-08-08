@@ -1,4 +1,5 @@
 # সফটওয়্যার ডেভেলপমেন্ট লাইফ সাইকেল
-সফটওয়্যার ডেভেলপমেন্ট লাইফ সাইকেল হল সফটওয়্যার বানানোর একটা পদ্ধতিগত উপায় যার দ্বারা নির্ভুল এবং উচ্চমান সম্পন্ন সফটওয়্যার পাই। 
+সফটওয়্যার ডেভেলপমেন্ট লাইফ সাইকেল (SDLC) হল সফটওয়্যার বানানোর একটা পদ্ধতিগত উপায় যার দ্বারা নির্ভুল এবং উচ্চমান সম্পন্ন সফটওয়্যার পাই। SDLC মূললক্ষ্য হল উচ্চমান সম্পন্ন সফটওয়্যার এবং কাস্টমারের প্রয়োজন মিটাতে সক্ষম। আমাদের ডেভেলপমেন্ট হতে হবে নির্দিষ্ট সময় এবং ব্যয়ের মধ্যে। SDLC তে বিস্তারিত প্লান উল্লেখ করা থাকে যার ভেতরে থাকে সফটওয়্যার বানানোর পূর্বের প্লান, কিভাবে এটা তৈরি হবে, বানানোর পর এটা কিভাবে মেইনটেইন হবে এই সব কিছু বলা থাকে। SDLC এর লাইফ সাইকেলে নির্দিষ্ট কতগুলো ধাপ আছে এবং প্রতিটা ধাপেই কাজের ধরন আলাদা।                       
 
-SDLC process aims to produce high-quality software that meets customer expectations. The system development should be complete in the pre-defined time frame and cost. SDLC consists of a detailed plan which explains how to plan, build, and maintain specific software. Every phase of the SDLC life cycle has its own process and deliverables that feed into the next phase. SDLC stands for Software Development Lifecycle.
+**SDLC এর ধাপ**
+
