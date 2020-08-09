@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaFX-Point-of-Sales" />
   </component>
   <component name="RunManager" selected="Application.Overloading">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -280,6 +280,7 @@
       <workItem from="1596036436435" duration="600000" />
       <workItem from="1596171303874" duration="697000" />
       <workItem from="1596429860147" duration="832000" />
+      <workItem from="1596899490450" duration="889000" />
     </task>
     <servers />
   </component>
@@ -287,10 +288,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1596171413992">
+    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1596899715360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596171413992" />
+    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596899715360" />
     <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1595954442973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
