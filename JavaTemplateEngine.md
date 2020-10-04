@@ -8,7 +8,7 @@
 
 <img src="Images/Template Engine.png" />
 
-**JSP and JSTL**                                   
+**1. JSP and JSTL**                                   
 JSP হল Java Server Pages এমন একটি টেকনোলজি যার দ্বারা এইচটিএমএল পেজে jsp ট্যাগ ব্যবহার করে জাভা কোড লেখা যায়।              
 ```
 <%@ page language="java" contentType="text/html; charset=US-ASCII"
@@ -42,7 +42,7 @@ JSTL হল JSP Standard Tag Library যেটা কিছু ট্যাগ�
 </html>
 ```
 
-**Thymeleaf**                  
+**2. Thymeleaf**                  
 Thymeleaf বর্তমানে স্প্রিং কমিউনিটিতে বেশ জনপ্রিয়।                        
 ```
 <tbody>
@@ -53,7 +53,26 @@ Thymeleaf বর্তমানে স্প্রিং কমিউনিট�
 </tbody>
 ```
 
-**FreeMarker**               
-FreeMarker হল Apache Software Foundation
+**3. FreeMarker**               
+FreeMarker হল Apache Software Foundation এর টেম্পলেট। এইটার ইউজারদের ও একটা বড় কমিউনিটি আছে।  FreeMarker স্প্রিং ফ্রেমওয়ার্কে ও কাজ করে।                    
+```
+<html>
+<head>
+  <title>${title}
+</head>
+<body>
+  <h1>${title}</h1>
+
+  <p>${exampleObject.name} by ${exampleObject.developer}</p>
+
+  <ul>
+    <#list systems as system>
+      <li>${system_index + 1}. ${system.name} from ${system.developer}</li>
+    </#list>
+  </ul>
+
+</body>
+</html>
+```                        
 
 https://hackernoon.com/java-template-engines-ef84cb1025a4
