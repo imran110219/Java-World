@@ -1,7 +1,7 @@
-# Java Data Model        
-Java Data Model is the java class which contains variables  and getters setters method for the variables. Java class object can used for passing data one method to another method. 
+# Java Data Object        
+Java Data Object is the java class object which contains variables, constructor and getters setters method for representing set of data. Java class object can used for passing data one method to another method. There are various types of data object in java like Java Beans, POJO etc.
 
-**Java Data Model Types**        
+**Java Data Object Types**        
 1. JavaBeans       
 2. POJO    
 3. Data Transfer Object   
@@ -104,7 +104,4 @@ puvlic class EmployeeLocation {
    private double lng;
 }
 ``` 
- 
-
-
 

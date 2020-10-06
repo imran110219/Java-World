@@ -13,4 +13,4 @@
 * [টেস্ট ড্রাইভেন ডেভেলপমেন্ট](TestDrivenDevelopment.md)
 * [জাভা মেমোরি ম্যানেজমেন্ট ](JavaMemoryManagement.md)
 * [সফটওয়্যার ডেভেলপমেন্ট লাইফ সাইকেল](SDLC.md)
-* [জাভা ডাটা মডেল](JavaDataModel.md)
+* [জাভা ডাটা অবজেক্ট](JavaDataObject.md)
