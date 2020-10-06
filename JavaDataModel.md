@@ -1,11 +1,11 @@
 # Java Data Model        
-Java Data Model is the java class which contains variables  and getters setters method for the variables. Data can used by any method via java object. 
+Java Data Model is the java class which contains variables  and getters setters method for the variables. Java class object can used for passing data one method to another method. 
 
 **Java Data Model Types**        
 1. JavaBeans       
 2. POJO    
-3. Value Object    
-4. Data Transfer Object   
+3. Data Transfer Object   
+  
   
 **JavaBeans**    
 JavaBeans is a portable, platform-independent model written in Java Programming Language. Its components are referred to as beans. In simple terms, JavaBeans are classes which encapsulate several objects into a single object. It helps in accessing these object from multiple places. JavaBeans contains several elements like Constructors, Getter/Setter Methods and much more.          
@@ -35,6 +35,7 @@ public class Employee implements java.io.Serializable{
    }  
 }  
 ```
+
 
 **POJO**   
 POJO is an acronym for Plain Old Java Object. The name is used to emphasize that the object in question is an ordinary Java Object, not a special object, and in particular not an Enterprise JavaBean (especially before EJB 3). POJOs are used for increasing the readability and re-usability of a program. The term was coined by Martin Fowler, Rebecca Parsons and Josh MacKenzie in September 2000.      
@@ -74,9 +75,7 @@ public class Employee {
       return name;
    }  
 }  
-```        
-
-**Value Object**        
+```              
 
 
 **Data Transfer Object**          
