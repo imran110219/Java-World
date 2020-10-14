@@ -23,7 +23,8 @@ public class HibernateUtilJava {
                 settings.put(Environment.PASS, "12345678");
                 settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
                 settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
-                settings.put(Environment.HBM2DDL_AUTO, "create-drop");
+//                settings.put(Environment.HBM2DDL_AUTO, "create-drop");
+                settings.put(Environment.HBM2DDL_AUTO, "update");
                 settings.put(Environment.STATEMENT_BATCH_SIZE, "5");
                 configuration.setProperties(settings);
                 configuration.addAnnotatedClass(Client.class);

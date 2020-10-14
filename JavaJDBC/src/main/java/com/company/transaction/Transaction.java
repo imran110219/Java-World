@@ -7,7 +7,7 @@ public class Transaction {
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "12345678");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc", "root", "12345678");
             Statement stmt = con.createStatement();
             con.setAutoCommit(false);
 
