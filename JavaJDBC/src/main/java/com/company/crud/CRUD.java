@@ -25,6 +25,7 @@ public class CRUD {
                 String output = "User #%d: %s - %s";
                 System.out.println(String.format(output, ++count, title, author));
             }
+            con.close();
 
         } catch(Exception e){ System.out.println(e);}
     }
@@ -44,6 +45,8 @@ public class CRUD {
             if (rowsInserted > 0) {
                 System.out.println("A new user was inserted successfully!");
             }
+            con.commit();
+            con.close();
 
         } catch(Exception e){ System.out.println(e);}
     }
