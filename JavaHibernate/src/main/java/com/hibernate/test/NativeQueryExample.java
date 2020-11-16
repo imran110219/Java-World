@@ -9,7 +9,9 @@ import org.hibernate.criterion.Restrictions;
 import org.hibernate.query.NativeQuery;
 
 import javax.persistence.Query;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 public class NativeQueryExample {
     public static void main(String[] args) {
@@ -17,7 +19,13 @@ public class NativeQueryExample {
         String sql = "SELECT * FROM client_table";
         NativeQuery query = session.createSQLQuery(sql);
         query.addEntity(Client.class);
-        List results = query.list();
-        System.out.println(results.get(1));
+        List clients = query.list();
+
+        for (Iterator iterator = clients.iterator(); iterator.hasNext();){
+            Client client = (Client) iterator.next();
+            System.out.print("Id: " + client.getId());
+            System.out.print("    Name: " + client.getName());
+            System.out.println();
+        }
     }
 }
