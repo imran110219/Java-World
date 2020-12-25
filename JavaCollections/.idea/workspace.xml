@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51d328fc-1dd7-448c-bca4-eb993f60cff6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/set/TreeSetExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/set/TreeSetExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,12 +267,30 @@
       <updated>1583644400053</updated>
       <workItem from="1583644403375" duration="6466000" />
       <workItem from="1583816416019" duration="3944000" />
-      <workItem from="1606982843936" duration="329000" />
+      <workItem from="1606982843936" duration="933000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1606984873166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606984873166" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1606984873166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606984873166" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1606984873166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606984873166" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1606984873166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606984873166" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
