@@ -40,9 +40,10 @@ public class PowerMockDemoTest {
 
     @Test
     public void tantamountNumbers() throws Exception {
-        Point mockPoint = mock(Point.class);
+        String message = "Hello PowerMockito";
+        int expectation = 4;
 
-        PowerMockito.doReturn(mockPoint).when(powerMockDemoSpy, "privateMethod", anyObject());
+        PowerMockito.doReturn(expectation).when(powerMockDemoSpy, "privateMethod", message);
 
         int product = powerMockDemoSpy.callproductNumbers(2,2);
 
