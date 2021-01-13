@@ -1,5 +1,6 @@
 package com.sadman.powermock;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,15 +26,26 @@ public class PowerMockDemoTest {
         powerMockDemoSpy = PowerMockito.spy(new PowerMockDemo());
     }
 
+//    @Test
+//    public void testMockPrivateMethod() throws Exception {
+//        Point mockPoint = mock(Point.class);
+//
+//        PowerMockito.doReturn(mockPoint)
+//                .when(powerMockDemoSpy, "privateMethod", anyObject());
+//
+//        Point actualMockPoint = powerMockDemoSpy.callPrivateMethod();
+//
+//        assertThat(actualMockPoint, is(mockPoint));
+//    }
+
     @Test
-    public void testMockPrivateMethod() throws Exception {
+    public void tantamountNumbers() throws Exception {
         Point mockPoint = mock(Point.class);
 
-        PowerMockito.doReturn(mockPoint)
-                .when(powerMockDemoSpy, "privateMethod", anyObject());
+        PowerMockito.doReturn(mockPoint).when(powerMockDemoSpy, "privateMethod", anyObject());
 
-        Point actualMockPoint = powerMockDemoSpy.callPrivateMethod();
+        int product = powerMockDemoSpy.callproductNumbers(2,2);
 
-        assertThat(actualMockPoint, is(mockPoint));
+        Assert.assertEquals(product,4);
     }
 }

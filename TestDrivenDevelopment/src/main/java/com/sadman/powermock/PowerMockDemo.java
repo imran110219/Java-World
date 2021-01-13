@@ -11,4 +11,12 @@ public class PowerMockDemo {
     private Point privateMethod(Point point) {
         return new Point((int)point.getX() + 1, (int)point.getY() + 1);
     }
+
+    public int callproductNumbers(int a, int b) {
+        return productNumbers(a, b);
+    }
+
+    private int productNumbers(int a, int b) {
+        return a*b;
+    }
 }
