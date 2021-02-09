@@ -10,7 +10,7 @@ import org.apache.poi.xssf.usermodel.*;
 
 public class Brand {
     public static void main(String[] args) {
-        String jdbcURL = "jdbc:mysql://localhost:3306/medical_inventory?useSSL=false";
+        String jdbcURL = "jdbc:mysql://localhost:3306/test?useSSL=false";
         String username = "root";
         String password = "12345678";
 
@@ -32,7 +32,8 @@ public class Brand {
             connection = DriverManager.getConnection(jdbcURL, username, password);
             connection.setAutoCommit(false);
 
-            String sql = "INSERT INTO brand (id, name, strength, generic, company, price) VALUES (?,?,?,?,?,?)";
+//            String sql = "INSERT INTO brand (id, name, strength, dosage, generic, company, price) VALUES (?,?,?,?,?,?,?)";
+            String sql = "INSERT INTO brand (id, name, dosage) VALUES (?,?,?)";
             PreparedStatement statement = connection.prepareStatement(sql);
 
             int count = 0;
@@ -45,18 +46,20 @@ public class Brand {
 
                 count++;
                 String name = nextRow.getCell(0).getStringCellValue();
-                String strength = formatter.formatCellValue(nextRow.getCell(1));
-                String generic = nextRow.getCell(2).getStringCellValue();
-                String company = nextRow.getCell(3).getStringCellValue();
-                String price = nextRow.getCell(4).getStringCellValue();
+//                String strength = formatter.formatCellValue(nextRow.getCell(1));
+                String dosage = nextRow.getCell(2).getStringCellValue();
+//                String generic = nextRow.getCell(3).getStringCellValue();
+//                String company = nextRow.getCell(4).getStringCellValue();
+//                String price = nextRow.getCell(5).getStringCellValue();
 
 
                 statement.setInt(1, count);
                 statement.setString(2, name);
-                statement.setString(3, strength);
-                statement.setString(4, generic);
-                statement.setString(5, company);
-                statement.setString(6, price);
+//                statement.setString(3, strength);
+                statement.setString(3, dosage);
+//                statement.setString(5, generic);
+//                statement.setString(6, company);
+//                statement.setString(7, price);
 
                 statement.addBatch();
 
