@@ -1,4 +1,4 @@
-package com.sadman.jsoup;
+package com.sadman.jsoup.inventory;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

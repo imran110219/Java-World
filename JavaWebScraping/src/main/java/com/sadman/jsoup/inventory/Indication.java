@@ -1,4 +1,4 @@
-package com.sadman.jsoup;
+package com.sadman.jsoup.inventory;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -18,47 +18,43 @@ import java.util.List;
 /**
  * @author Sadman
  */
-public class GenericMedicine {
+public class Indication {
     public static void main(String[] args) throws IOException {
         XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet sheet = workbook.createSheet("genericnames");
+        XSSFSheet sheet = workbook.createSheet("Indications");
 
 
-        List<List<String>> genericnames = new ArrayList<List<String>>();
+        List<List<String>> indications = new ArrayList<List<String>>();
 
-        for(int i=1; i<95; i++) {
-            String url = "https://medex.com.bd/generics?page="+i;
+        for(int i=1; i<69; i++) {
+            String url = "https://medex.com.bd/indications?page="+i;
 
             Document doc = Jsoup.connect(url).timeout(60000).validateTLSCertificates(false).get();
 
-            Elements divs = doc.body().getElementsByClass("col-xs-12 col-sm-6");
+            Elements divs = doc.body().getElementsByClass("col-xs-12 col-sm-6 col-lg-4");
             if (divs.size() != 0) {
                 for (Element div : divs) {
-                    Elements es = div.getElementsByClass("hoverable-block darker");
+                    Elements es = div.getElementsByClass("col-xs-12 data-row-top");
                     for (Element e : es) {
-//                        System.out.println(e.getElementsByTag("a").attr("href"));
-                        Element temp = e.getElementsByTag("a").first();
-//                        System.out.println(temp.getElementsByClass("col-xs-12 data-row-top dcind-title").text());
-//                        System.out.println(e.getElementsByTag("a").attr("href"));
-//                        System.out.println(e.getElementsByTag("a").text());
+//                System.out.println(i.getElementsByTag("a"));
+                        System.out.println(e.getElementsByTag("a").attr("href"));
+                        System.out.println(e.getElementsByTag("a").text());
                         List<String> x = new ArrayList<String>();
-                        x.add(temp.getElementsByClass("col-xs-12 data-row-top dcind-title").text());
+                        x.add(e.getElementsByTag("a").text());
                         x.add(e.getElementsByTag("a").attr("href"));
-                        genericnames.add(x);
-//
-//                        System.out.println(e);
+                        indications.add(x);
+
+
                     }
-//                    System.out.println(div);
                 }
             }
-//            System.out.println(divs);
         }
-        System.out.println(Arrays.deepToString(genericnames.toArray()));
-        System.out.println(genericnames.size());
+        System.out.println(Arrays.deepToString(indications.toArray()));
+        System.out.println(indications.size());
 
         int rowCount = 0;
 
-        for (List<String> num: genericnames) {
+        for (List<String> num: indications) {
             Row row = sheet.createRow(++rowCount);
 
             int columnCount = 0;
@@ -73,7 +69,7 @@ public class GenericMedicine {
         }
 
 
-        FileOutputStream outputStream = new FileOutputStream("genericnames.xlsx");
+        FileOutputStream outputStream = new FileOutputStream("indications.xlsx");
         workbook.write(outputStream);
 
 //        String attr = div.attr("row");
