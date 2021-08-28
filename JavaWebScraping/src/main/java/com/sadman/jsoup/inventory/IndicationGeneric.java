@@ -35,7 +35,7 @@ public class IndicationGeneric {
 
         Sheet firstSheet = workbook1.getSheetAt(0);
         Iterator<Row> rowIterator = firstSheet.iterator();
-        rowIterator.next();
+//        rowIterator.next();
         while (rowIterator.hasNext()) {
             Row nextRow = rowIterator.next();
             String iName = nextRow.getCell(1).getStringCellValue();

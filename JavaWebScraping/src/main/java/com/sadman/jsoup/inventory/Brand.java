@@ -39,31 +39,34 @@ public class Brand {
                         String name = e.getElementsByClass("col-xs-12 data-row-top").text();
                         String link = e.getElementsByTag("a").attr("href");
                         String strength = e.getElementsByClass("col-xs-12 data-row-strength").text();
+                        String dosageForm = e.getElementsByTag("img").attr("title");
                         String generic = e.getElementsByClass("col-xs-12").get(2).text();
                         String company = e.getElementsByClass("col-xs-12").get(3).text();
                         String price = e.getElementsByClass("col-xs-12 packages-wrapper").text();
                         System.out.println(name);
-                        System.out.println(link);
-                        System.out.println(strength);
-                        System.out.println(generic);
-                        System.out.println(company);
-                        System.out.println(price);
+//                        System.out.println(link);
+//                        System.out.println(strength);
+//                        System.out.println(dosageForm);
+//                        System.out.println(generic);
+//                        System.out.println(company);
+//                        System.out.println(price);
                         List<String> x = new ArrayList<String>();
                         x.add(name);
                         x.add(strength);
+                        x.add(dosageForm);
                         x.add(generic);
                         x.add(company);
                         x.add(price);
                         x.add(link);
                         brands.add(x);
-                        System.out.println(e);
+//                        System.out.println(e);
                     }
-                    System.out.println(es.size());
+//                    System.out.println(es.size());
                 }
-                System.out.println(divs.size());
+//                System.out.println(divs.size());
             }
         }
-        System.out.println(Arrays.deepToString(brands.toArray()));
+//        System.out.println(Arrays.deepToString(brands.toArray()));
         System.out.println(brands.size());
 
         int rowCount = 0;
@@ -86,8 +89,5 @@ public class Brand {
         FileOutputStream outputStream = new FileOutputStream("brands.xlsx");
         workbook.write(outputStream);
 
-//        String attr = div.attr("row");
-//        System.out.println(attr);
-//        System.out.println(doc.body().getElementsByClass("col-xs-12 col-sm-6 col-lg-4"));
     }
 }
